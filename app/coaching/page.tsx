@@ -203,12 +203,12 @@ const CoachingPage: React.FC = () => {
             Explore how personalized coaching can transform your life and career.
           </p>
           <a
-            href="https://gem.coach/contact"
+            href="https://www.gem.coach/interest-form"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-[#001C3E] px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-xl inline-block"
           >
-            Get in Touch at gem.coach
+            Get in Touch
           </a>
         </div>
       </AnimatedSection>

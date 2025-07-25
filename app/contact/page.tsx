@@ -287,12 +287,12 @@ const ContactPage: React.FC = () => {
           </blockquote>
           <cite className="text-blue-200">— Eric Horwitz</cite>
         </div>
-        <div className="mt-8">
+        <div className="mt-8 text-center">
           <a
             href="https://gem.coach"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-[#001C3E] px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-255 hover:shadow-xl"
+            className="inline-block bg-white text-[#001C3E] px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
             Visit gem.coach for more info or to book a session
           </a>

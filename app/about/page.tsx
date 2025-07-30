@@ -43,25 +43,18 @@ const AboutPage: React.FC = () => {
         <meta name="description" content="Learn about Eric Horwitz, a leading NYC executive coach specializing in career change, growth mindset, leadership development, and professional identity counseling. Discover his approach to career growth plan templates, work goal setting, and midlife career transitions." />
         <meta name="keywords" content="about Eric Horwitz, executive coach, career growth plan template, growth mindset, leadership development, career change in 40s, professional identity counseling, work goals to set, goal setting at work, midlife career crisis, GEM coaching, NYC, career transitions, personal development, professional development committee, career path decide, career zen, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, coaching programs, leadership development programs" />
       </Head>
-      <main className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 py-20">
-        <section className="mb-16">
-          <div className="bg-gradient-to-r from-[#001C3E] to-blue-900 rounded-3xl shadow-xl p-10 md:p-16 flex flex-col md:flex-row items-center gap-10">
-            <div className="flex-1 text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg">
-                About Eric Horwitz
-                <span className="block text-lg md:text-2xl font-semibold text-blue-200 mt-2">Executive Coach for Career Change, Growth Mindset & Leadership</span>
-              </h1>
-              <p className="text-lg md:text-xl text-blue-100 mb-4 font-medium">
-                Eric Horwitz is a leading executive coach, growth mindset advocate, and founder of GEM Coaching in NYC. With over 20 years of experience, Eric empowers professionals, leaders, and organizations to achieve breakthrough results, navigate career transitions, and develop a resilient professional identity.
-              </p>
-              <p className="text-base md:text-lg text-blue-100 mb-2">
-                <span className="font-semibold text-white">Specializing in career change in your 30s, 40s, and 50s</span>, Eric’s coaching blends strategic rigor, human insight, and proven frameworks for leadership development, goal setting at work, and burnout recovery. He is known for his work on career growth plan templates, professional identity counseling, and supporting clients through midlife career crisis symptoms.
-              </p>
-              <p className="text-base md:text-lg text-blue-100">
-                Based in New York City, Eric serves clients globally, offering one-on-one executive coaching, group programs, and workshops for organizations seeking to foster a culture of growth, resilience, and purpose. Try his <a href="/resources" className="underline font-semibold text-white hover:text-blue-200">career growth plan template</a>, <a href="/resources" className="underline font-semibold text-white hover:text-blue-200">goal setting worksheet</a>, and <a href="/resources" className="underline font-semibold text-white hover:text-blue-200">free career quiz for students and professionals</a>.
-              </p>
-            </div>
-          </div>
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h1 className="text-5xl font-bold text-[#001C3E] mb-8">About Eric Horwitz: Executive Coach for Career Change, Growth Mindset & Leadership</h1>
+        <section className="mb-12">
+          <p className="text-xl text-gray-700 mb-6">
+            Eric Horwitz is a leading executive coach, growth mindset advocate, and founder of GEM Coaching in NYC. With over 20 years of experience, Eric empowers professionals, leaders, and organizations to achieve breakthrough results, navigate career transitions, and develop a resilient professional identity.
+          </p>
+          <p className="text-lg text-gray-600 mb-4">
+            Specializing in <strong>career change in your 30s, 40s, and 50s</strong>, Eric’s coaching blends strategic rigor, human insight, and proven frameworks for leadership development, goal setting at work, and burnout recovery. He is known for his work on career growth plan templates, professional identity counseling, and supporting clients through midlife career crisis symptoms.
+          </p>
+          <p className="text-lg text-gray-600">
+            Based in New York City, Eric serves clients globally, offering one-on-one executive coaching, group programs, and workshops for organizations seeking to foster a culture of growth, resilience, and purpose. Try his <a href="/resources" className="underline hover:text-blue-700">career growth plan template</a>, <a href="/resources" className="underline hover:text-blue-700">goal setting worksheet</a>, and <a href="/resources" className="underline hover:text-blue-700">free career quiz for students and professionals</a>.
+          </p>
         </section>
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-[#001C3E] mb-4">Credentials & Experience in Leadership Development</h2>

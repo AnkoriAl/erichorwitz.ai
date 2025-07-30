@@ -1,9 +1,11 @@
 'use client'
 
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, Mail, Users, Award, Building, Sparkles, Target, Zap } from 'lucide-react';
 import Link from 'next/link';
+import Head from 'next/head';
 import AnimatedSection from './components/AnimatedSection';
 import FloatingCard from './components/FloatingCard';
 
@@ -74,6 +76,21 @@ const Home: React.FC = () => {
 
   return (
     <div>
+      <Head>
+        <title>Executive Coach for Career Change, Growth Mindset & Leadership | Eric Horwitz</title>
+        <meta name="description" content="Navigate your career change, set work goals, and develop a growth mindset with a leading NYC executive coach. Eric Horwitz offers leadership development, career growth plan templates, and professional identity counseling for professionals in their 30s, 40s, and 50s." />
+        <meta name="keywords" content="career growth plan template, career path decide, career path logistics, career growth quote, career zen, professional development committee, career change in 40s, career change 30s, career transition resume examples, career change 45, self recognition test, development human resources, career quiz teens, free career quiz for students, career quiz teenager, technology career quiz, job search career quiz, best jobs for a midlife career change, good careers for midlife career change, midlife career crisis symptoms, jobs identity and access management, work goals to set, work goal ideas, work objective sample, purpose of a job, professional identity counseling, work function symbol, growth mindset book, growth mindset quotes, growth mindset pictures, growth mindset activities, goal setting at work, goal setting books, growth mindset bulletin board, goal setting excel template, IT goal setting, quote on growth mindset, quote about growth mindset, book growth mindset, personal goal setting examples, template goal setting, quote on goal setting, what is growth mindset, example of growth mindset, development goal setting examples, pdf goal setting worksheet, goal setting example for work, 12 stages of burnout, burnout, career transitions, interview help desk questions, interview training skills, Eric Horwitz, executive coach, leadership development, NYC, GEM coaching, professional development, leadership development programs" />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSW578WSLS"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GSW578WSLS');
+          `
+        }} />
+      </Head>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#001C3E] via-blue-900 to-indigo-900 text-white overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.05%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
@@ -91,9 +108,9 @@ const Home: React.FC = () => {
                 className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6"
               >
                 <Sparkles className="h-4 w-4 mr-2" />
-                <span className="text-sm font-medium">20+ Years Transforming Leaders</span>
+                <span className="text-sm font-medium">20+ Years Transforming Leaders, Career Changers & Growth Mindset Seekers</span>
               </motion.div>
-              
+              <h1 className="sr-only">Executive Coaching, Career Growth Plan Template, Growth Mindset & Career Change in NYC | Eric Horwitz</h1>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
@@ -101,7 +118,7 @@ const Home: React.FC = () => {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="block"
                 >
-                  Architect Your
+                  Architect Your Career Path & Growth Mindset
                 </motion.span>
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
@@ -109,17 +126,16 @@ const Home: React.FC = () => {
                   transition={{ duration: 0.6, delay: 0.4 }}
                   className="block bg-gradient-to-r from-blue-200 to-cyan-200 bg-clip-text text-transparent"
                 >
-                  Future
+                  Future Success
                 </motion.span>
               </h1>
-              
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed"
               >
-                Executive coach empowering leaders, entrepreneurs, and changemakers to forge their purpose since 2005.
+                Executive coach and professional development committee advisor empowering leaders, entrepreneurs, and career changers to forge their purpose, set work goals, and overcome midlife career crisis symptoms. Explore growth mindset activities, career quizzes, and goal setting at work for every stage of your journey.
               </motion.p>
               
               <motion.div
@@ -175,19 +191,56 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Brief Introduction */}
+      {/* Brief Introduction & SEO Sections */}
       <AnimatedSection className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            20+ Years of Transforming Lives
-          </h2>
-          <p className="text-xl text-gray-700 leading-relaxed">
-            Eric Horwitz is an executive, career, and life-design coach with over 20 years of experience
-            helping high-performing professionals gain clarity, define bold visions, and achieve measurable results.
-            His clients include leaders across finance, tech, healthcare, education, and the public sector.
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">20+ Years of Transforming Lives & Career Transitions</h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Executive & Life Coaching for leaders, founders, and organizations seeking breakthrough results. Based in New York City, serving clients globally. <br />
+            <span className="font-semibold">For more, visit <a href="https://gem.coach" className="underline hover:text-blue-200" target="_blank" rel="noopener noreferrer">gem.coach</a></span>
+            <br />
+            <span className="block mt-2">Try our <a href="/resources" className="underline hover:text-blue-700">career growth plan template</a>, <a href="/resources" className="underline hover:text-blue-700">goal setting worksheet</a>, and <a href="/resources" className="underline hover:text-blue-700">free career quiz for students and professionals</a>.</span>
           </p>
         </div>
       </AnimatedSection>
+
+      {/* How It Works Section for SEO */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-[#001C3E] mb-8">How It Works: The GEM Coaching Process</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <FloatingCard className="p-6">
+              <h3 className="text-xl font-semibold mb-2">1. Discovery & Assessment</h3>
+              <p className="text-gray-700">We begin with a deep-dive assessment to clarify your goals, challenges, and unique strengths. This ensures a tailored coaching experience for executives, founders, and teams.</p>
+            </FloatingCard>
+            <FloatingCard className="p-6">
+              <h3 className="text-xl font-semibold mb-2">2. Vision & Strategy</h3>
+              <p className="text-gray-700">Together, we co-create a vision and actionable strategy, leveraging proven frameworks and industry best practices. Our approach is rooted in real-world leadership and organizational transformation.</p>
+            </FloatingCard>
+            <FloatingCard className="p-6">
+              <h3 className="text-xl font-semibold mb-2">3. Practice & Accountability</h3>
+              <p className="text-gray-700">Through regular sessions, you’ll build new habits, measure progress, and achieve sustainable results. We provide ongoing support and accountability to ensure lasting impact.</p>
+            </FloatingCard>
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/about" className="text-[#001C3E] font-semibold underline hover:text-blue-700">Learn more about Eric Horwitz & GEM</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Internal Links for SEO */}
+      <section className="py-8 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl font-bold text-[#001C3E] mb-4">Explore More</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/coaching" className="text-blue-900 underline hover:text-blue-700">Coaching Services</Link>
+            <Link href="/programs" className="text-blue-900 underline hover:text-blue-700">GEM Programs</Link>
+            <Link href="/resources" className="text-blue-900 underline hover:text-blue-700">Resources</Link>
+            <Link href="/testimonials" className="text-blue-900 underline hover:text-blue-700">Success Stories</Link>
+            <Link href="/contact" className="text-blue-900 underline hover:text-blue-700">Contact</Link>
+          </div>
+        </div>
+      </section>
 
       {/* Key Numbers */}
       <AnimatedSection className="py-20 bg-white">
@@ -226,7 +279,7 @@ const Home: React.FC = () => {
       {/* Featured Programs */}
       <AnimatedSection className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Signature Programs</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Signature Programs & Growth Mindset Activities</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -261,9 +314,9 @@ const Home: React.FC = () => {
                   )}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{program.title}</h3>
-                <p className="text-gray-600 mb-4">{program.description}</p>
+                <p className="text-gray-600 mb-4">{program.description} {program.title === "Renaissance Academy" ? "Includes career transition resume examples, professional identity counseling, and interview training skills." : ""} {program.title === "Thriver Program" ? "Ideal for midlife career change, work goal setting, and burnout recovery." : ""}</p>
                 <Link href="/programs" className="text-[#001C3E] font-semibold hover:underline group-hover:translate-x-1 transition-transform duration-300 inline-flex items-center">
-                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                  {`Learn More about ${program.title}`} <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </FloatingCard>
             ))}
@@ -274,7 +327,7 @@ const Home: React.FC = () => {
       {/* Testimonials */}
       <AnimatedSection className="py-20 bg-[#001C3E] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-12">Client Success Stories</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">Client Success Stories & Growth Mindset Quotes</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <motion.div
@@ -305,7 +358,7 @@ const Home: React.FC = () => {
       {/* Companies & Organizations */}
       <AnimatedSection className="py-20 bg-[#001C3E]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-white mb-10">Trusted By</h2>
+          <h2 className="text-4xl font-bold text-center text-white mb-10">Trusted By Leading Organizations & Career Development Committees</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-center">
             {/* Row 1 */}
             <img src="https://static.wixstatic.com/media/aa49a0_3343a8065176468698f19eac402af860~mv2.png/v1/fill/w_354,h_100,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1544px-VOGUE_LOGO_edited.png" alt="Vogue" className="mx-auto h-12 object-contain" />
@@ -341,8 +394,8 @@ const Home: React.FC = () => {
           >
             <Mail className="h-12 w-12 mx-auto mb-4 text-white" />
           </motion.div>
-          <h2 className="text-3xl font-bold mb-4" style={{ color: "#ffffffff" }}>Get Monthly Inspiration</h2>
-          <p className="text-xl text-blue-100 mb-8" style={{ color: "#ffffffff" }}>Join the newsletter for tools and inspiration from Eric.</p>
+          <h2 className="text-3xl font-bold mb-4" style={{ color: "#ffffffff" }}>Get Monthly Inspiration & Growth Mindset Tips</h2>
+          <p className="text-xl text-blue-100 mb-8" style={{ color: "#ffffffff" }}>Join the newsletter for tools, growth mindset quotes, and career path logistics from Eric.</p>
           <div className="flex justify-center w-full">
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md w-full items-center">
               <input
@@ -383,7 +436,7 @@ const Home: React.FC = () => {
       {/* CTA Strip */}
       <AnimatedSection className="py-20 bg-gradient-to-r from-[#001C3E] to-blue-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to forge your purpose?</h2>
+          <h2 className="text-4xl font-bold mb-6">Ready to forge your purpose and set new work goals?</h2>
           <Link
             href="/coaching"
             className="inline-flex items-center bg-white text-[#001C3E] px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-xl group"
@@ -395,6 +448,6 @@ const Home: React.FC = () => {
       </AnimatedSection>
     </div>
   );
-};
+}
 
 export default Home;

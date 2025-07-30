@@ -1,4 +1,4 @@
-// File: /Users/almogankori/Documents/GitHub/GEM/Code/EricHorwitz.ai Site/app/coaching/page.tsx
+// File: /Users/almogankori/Documents/GitHub/EricHorwitz.ai/app/coaching/page.tsx
 import * as entry from '../../../../app/coaching/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

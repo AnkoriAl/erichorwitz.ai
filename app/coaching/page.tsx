@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Users, Building, Lightbulb, Target, BarChart, Sparkles } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import FloatingCard from '../components/FloatingCard';
+import Head from 'next/head';
 
 const CoachingPage: React.FC = () => {
   const services = [
@@ -57,6 +58,27 @@ const CoachingPage: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <title>Executive Coaching, Growth Mindset & Career Change Programs | Eric Horwitz | GEM Coaching</title>
+        <meta
+          name="description"
+          content="Unlock your potential with executive coaching, growth mindset programs, career change support, leadership development, and team workshops by Eric Horwitz. Explore the Thriver Program, Treasure Chest, and proven frameworks for career growth, goal setting, and professional identity counseling."
+        />
+        <meta
+          name="keywords"
+          content="executive coaching, growth mindset, career change in 40s, leadership development, career growth plan template, goal setting at work, professional identity counseling, GEM Coaching, Eric Horwitz, Thriver Program, Treasure Chest, team development workshops, corporate leadership coaching, personal development, work goals to set, midlife career crisis, coaching programs, leadership development programs, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, NYC executive coach"
+        />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSW578WSLS"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GSW578WSLS');
+          `
+        }} />
+      </Head>
       <section className="bg-gradient-to-br from-[#001C3E] via-blue-900 to-indigo-900 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-white/5" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
@@ -64,10 +86,10 @@ const CoachingPage: React.FC = () => {
             <Sparkles className="h-4 w-4 mr-2" />
             <span className="text-sm font-medium">Transform Purpose into Performance</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Executive & Life Coaching</h1>
+          <h1 className="sr-only">Executive Coaching, Growth Mindset & Career Change Programs by Eric Horwitz — GEM Coaching</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Executive Coaching, Growth Mindset & Career Change</h1>
           <p className="text-xl text-blue-100 mb-8">
-            Coaching is the art of helping people architect their futures. Eric offers personalized programs 
-            for individuals and organizations ready to unlock their potential.<br />
+            Unlock your potential with executive coaching, growth mindset activities, and career change programs. Eric Horwitz offers personalized coaching for professionals, leaders, and organizations seeking breakthrough results, leadership development, and work goal setting.<br />
             <span className="font-semibold">For more, visit <a href="https://gem.coach" className="underline hover:text-blue-200" target="_blank" rel="noopener noreferrer">gem.coach</a></span>
           </p>
         </div>
@@ -76,7 +98,7 @@ const CoachingPage: React.FC = () => {
       {/* Services Overview */}
       <AnimatedSection className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Coaching Services</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Coaching Services: Executive, Career Change & Growth Mindset</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => {
               const Icon = service.icon;
@@ -97,7 +119,7 @@ const CoachingPage: React.FC = () => {
       {/* Methodology */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">The GEM Methodology</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">The GEM Methodology: Vision, Growth & Results</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {methodology.map((step, index) => {
               const Icon = step.icon;
@@ -118,7 +140,7 @@ const CoachingPage: React.FC = () => {
       {/* Tools & Frameworks */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Tools & Frameworks</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Coaching Tools & Frameworks for Career Growth</h2>
           <div className="flex flex-wrap justify-center gap-4">
             {tools.map((tool, index) => (
               <span
@@ -135,12 +157,12 @@ const CoachingPage: React.FC = () => {
       {/* Signature Programs */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Signature Programs</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Signature Programs: Thriver, Treasure Chest & More</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Thriver Program</h3>
               <p className="text-gray-600 mb-6">
-                12-week intensive with paired accountability partners for exponential growth and breakthrough results.
+                12-week intensive with paired accountability partners for exponential growth, midlife career change, and breakthrough results. Ideal for professionals seeking work goal setting, burnout recovery, and leadership development.
               </p>
               <a
                 href="https://gem.coach/thriver"
@@ -148,13 +170,13 @@ const CoachingPage: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-[#001C3E] font-semibold hover:underline bg-blue-50 px-4 py-2 rounded transition"
               >
-                Learn More at GEM.coach →
+                Learn More about the Thriver Program →
               </a>
             </div>
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Treasure Chest</h3>
               <p className="text-gray-600 mb-6">
-                Global self-improvement community for collective growth, reflection, and monthly themed workshops. Join a supportive environment designed for continuous learning and connection.
+                Global self-improvement community for collective growth, reflection, and monthly themed workshops. Join a supportive environment designed for continuous learning, growth mindset activities, and professional identity counseling.
               </p>
               <a
                 href="https://gem.coach/treasure-chest"
@@ -162,7 +184,7 @@ const CoachingPage: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-[#001C3E] font-semibold hover:underline bg-blue-50 px-4 py-2 rounded transition"
               >
-                Learn More at GEM.coach →
+                Learn More about the Treasure Chest →
               </a>
             </div>
           </div>
@@ -172,7 +194,7 @@ const CoachingPage: React.FC = () => {
       {/* Client Logos */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">Trusted by Leading Organizations</h2>
+          <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">Trusted by Leading Organizations & Career Development Committees</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 opacity-60">
             {clientLogos.map((logo, index) => (
               <div key={index} className="text-center">

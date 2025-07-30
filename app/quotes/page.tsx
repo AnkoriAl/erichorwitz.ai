@@ -1,4 +1,7 @@
+
+
 'use client'
+import Head from 'next/head';
 
 import React, { useState } from 'react';
 import { Copy, Share2, Quote } from 'lucide-react';
@@ -54,6 +57,7 @@ const QuotesPage: React.FC = () => {
     }
   ];
 
+
   const copyToClipboard = async (quote: string) => {
     try {
       await navigator.clipboard.writeText(`"${quote}" — Eric Horwitz`);
@@ -82,6 +86,18 @@ const QuotesPage: React.FC = () => {
 
   return (
     <div>
+      <Head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSW578WSLS"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GSW578WSLS');
+          `
+        }} />
+      </Head>
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

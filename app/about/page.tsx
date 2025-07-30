@@ -1,4 +1,10 @@
 import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+import { Quote, Heart, Users, Lightbulb, Target, Sparkles } from 'lucide-react';
+import AnimatedSection from '../components/AnimatedSection';
+import React from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import { Quote, Heart, Users, Lightbulb, Target, Sparkles } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -14,46 +20,88 @@ const AboutPage: React.FC = () => {
 
   const values = [
     {
-      icon: Target,
-      title: "Evolution",
-      description: "Continuous growth over static perfection."
+      icon: Heart,
+      title: 'Empathy',
+      description: 'Coaching with compassion, understanding, and respect for every client.'
     },
     {
       icon: Users,
-      title: "Community",
-      description: "Collective wisdom multiplies individual potential."
-    },
-    {
-      icon: Heart,
-      title: "Accountability",
-      description: "Dreams become reality through committed follow-through."
+      title: 'Community',
+      description: 'Building a network of support, growth, and shared purpose.'
     },
     {
       icon: Lightbulb,
-      title: "Playfulness",
-      description: "A child-like sense of wonder fuels creativity and joy."
+      title: 'Insight',
+      description: 'Helping clients discover new perspectives and actionable strategies.'
+    },
+    {
+      icon: Target,
+      title: 'Results',
+      description: 'Driving measurable progress and sustainable transformation.'
     }
-  ]; // <-- Make sure this semicolon is present and there are no stray characters after this line
+  ];
 
   return (
     <div>
-      {/* Page Header */}
-      <section className="bg-gradient-to-br from-[#001C3E] via-blue-900 to-indigo-900 text-white py-20 relative overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-          }}
-        ></div>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-            <Sparkles className="h-4 w-4 mr-2" />
-            <span className="text-sm font-medium">Coach • Storyteller • Visionary</span>
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Meet Eric Horwitz</h1>
-          <p className="text-xl text-blue-100">Transforming leaders through purpose-driven coaching</p>
-        </div>
-      </section>
+      <Head>
+        <title>About Eric Horwitz | Executive Coach for Career Change, Growth Mindset & Leadership</title>
+        <meta name="description" content="Learn about Eric Horwitz, a leading NYC executive coach specializing in career change, growth mindset, leadership development, and professional identity counseling. Discover his approach to career growth plan templates, work goal setting, and midlife career transitions." />
+        <meta name="keywords" content="about Eric Horwitz, executive coach, career growth plan template, growth mindset, leadership development, career change in 40s, professional identity counseling, work goals to set, goal setting at work, midlife career crisis, GEM coaching, NYC, career transitions, personal development, professional development committee, career path decide, career zen, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, coaching programs, leadership development programs" />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSW578WSLS"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GSW578WSLS');
+          `
+        }} />
+      </Head>
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h1 className="text-5xl font-bold text-[#001C3E] mb-8">About Eric Horwitz: Executive Coach for Career Change, Growth Mindset & Leadership</h1>
+        <section className="mb-12">
+          <p className="text-xl text-gray-700 mb-6">
+            Eric Horwitz is a leading executive coach, growth mindset advocate, and founder of GEM Coaching in NYC. With over 20 years of experience, Eric empowers professionals, leaders, and organizations to achieve breakthrough results, navigate career transitions, and develop a resilient professional identity.
+          </p>
+          <p className="text-lg text-gray-600 mb-4">
+            Specializing in <strong>career change in your 30s, 40s, and 50s</strong>, Eric’s coaching blends strategic rigor, human insight, and proven frameworks for leadership development, goal setting at work, and burnout recovery. He is known for his work on career growth plan templates, professional identity counseling, and supporting clients through midlife career crisis symptoms.
+          </p>
+          <p className="text-lg text-gray-600">
+            Based in New York City, Eric serves clients globally, offering one-on-one executive coaching, group programs, and workshops for organizations seeking to foster a culture of growth, resilience, and purpose. Try his <a href="/resources" className="underline hover:text-blue-700">career growth plan template</a>, <a href="/resources" className="underline hover:text-blue-700">goal setting worksheet</a>, and <a href="/resources" className="underline hover:text-blue-700">free career quiz for students and professionals</a>.
+          </p>
+        </section>
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-[#001C3E] mb-4">Credentials & Experience in Leadership Development</h2>
+          <ul className="list-disc list-inside text-lg text-gray-700">
+            <li>20+ years coaching leaders, founders, and professionals on growth mindset and career transitions</li>
+            <li>Certified Professional Coach (ICF, Columbia University)</li>
+            <li>Founder of GEM Coaching and the Renaissance Academy for coaching-skills certification</li>
+            <li>Facilitator for leadership development programs at Fortune 500 companies</li>
+            <li>Featured in The New York Times, Vogue, and Columbia University</li>
+          </ul>
+        </section>
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-[#001C3E] mb-4">Coaching Philosophy: Growth Mindset & Purpose</h2>
+          <p className="text-lg text-gray-600">
+            Eric believes that purpose isn’t found—it’s forged. His coaching empowers clients to clarify their vision, set meaningful work goals, and develop the growth mindset needed to thrive in today’s dynamic world. Explore <a href="/programs" className="underline hover:text-blue-700">leadership development programs</a> and <a href="/resources" className="underline hover:text-blue-700">growth mindset activities</a> to accelerate your journey.
+          </p>
+        </section>
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-[#001C3E] mb-4">Signature Programs & Resources</h2>
+          <ul className="list-disc list-inside text-lg text-gray-700">
+            <li><a href="/programs" className="underline hover:text-blue-700">Renaissance Academy</a>: Career transition resume examples, interview training skills, and professional identity counseling for aspiring coaches.</li>
+            <li><a href="/programs" className="underline hover:text-blue-700">Thriver Program</a>: Deep-accountability mastermind for midlife career change, work goal setting, and burnout recovery.</li>
+            <li><a href="/resources" className="underline hover:text-blue-700">Growth mindset quotes</a>, <a href="/resources" className="underline hover:text-blue-700">goal setting books</a>, and <a href="/resources" className="underline hover:text-blue-700">career quizzes</a> for ongoing development.</li>
+          </ul>
+        </section>
+        <section>
+          <h2 className="text-3xl font-bold text-[#001C3E] mb-4">Ready to Start Your Career Growth Journey?</h2>
+          <p className="text-lg text-gray-600 mb-4">
+            Whether you’re considering a career change, seeking leadership development, or looking to overcome burnout, Eric offers a proven framework for growth. <a href="/coaching" className="text-blue-700 underline">Explore coaching programs</a> or <a href="/contact" className="text-blue-700 underline">contact Eric</a> to get started.
+          </p>
+        </section>
+      </main>
 
       {/* Biography */}
       <AnimatedSection className="py-20">
@@ -78,8 +126,8 @@ const AboutPage: React.FC = () => {
               <div>
                 <h2 className="text-2xl font-bold text-[#001C3E] mb-2">Executive Leadership Experience</h2>
                 <p className="text-base text-gray-700 leading-relaxed mb-4">
-                  Eric brings <span className="font-semibold">14 years of senior HR leadership experience as SVP and management consultant at PwC</span>, where he specialized in large-scale talent development and organizational transformation.
-                  His diverse background includes expertise in storytelling and communication, skills that enhance his ability to connect with and inspire leaders at all levels.
+                  Eric brings <span className="font-semibold">14 years of senior HR leadership experience as SVP and management consultant at PwC</span>, where he specialized in large-scale talent development and organizational transformation for Fortune 500 companies and high-growth startups in New York City and globally.
+                  His diverse background includes expertise in storytelling and communication, skills that enhance his ability to connect with and inspire leaders at all levels, including healthcare, finance, and technology sectors.
                   A pivotal moment in his career came following 9/11, when Eric redirected his focus toward purpose-driven work that creates meaningful impact.
                 </p>
               </div>
@@ -94,7 +142,7 @@ const AboutPage: React.FC = () => {
                 <h2 className="text-2xl font-bold text-[#001C3E] mb-2">Coaching Achievements</h2>
                 <p className="text-base text-gray-700 leading-relaxed mb-4">
                   Eric has coached leaders at <span className="font-semibold">Credit Suisse, Reuters, IDEO, Google, NYC DOE, and beyond</span>.
-                  He chairs the <span className="font-semibold">Columbia University Career Coaching Network (400k+ alumni)</span> and founded <span className="font-semibold">GEM (Gennex Management), a purpose-driven ecosystem and coaching network committed to guiding individuals and organizations through transformation, evolution, and meaningful connection worldwide</span>.
+                  He chairs the <span className="font-semibold">Columbia University Career Coaching Network (400k+ alumni)</span> and founded <span className="font-semibold">GEM (Gennex Management)</span>, a purpose-driven ecosystem and coaching network committed to guiding individuals and organizations through transformation, evolution, and meaningful connection worldwide.
                 </p>
               </div>
               <div>
@@ -147,6 +195,27 @@ const AboutPage: React.FC = () => {
         </div>
       </AnimatedSection>
 
+      {/* How It Works Section for SEO */}
+      <AnimatedSection className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">How Executive Coaching with Eric Works</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <FloatingCard className="p-8">
+              <h3 className="text-xl font-bold text-[#001C3E] mb-4">1. Discovery & Assessment</h3>
+              <p className="text-gray-700">We begin with a comprehensive assessment of your goals, challenges, and leadership style. This ensures every coaching engagement is tailored to your unique needs and aspirations.</p>
+            </FloatingCard>
+            <FloatingCard className="p-8">
+              <h3 className="text-xl font-bold text-[#001C3E] mb-4">2. Strategic Roadmap</h3>
+              <p className="text-gray-700">Together, we co-create a clear, actionable plan using proven frameworks like Ikigai, Maslow's Hierarchy, and the Architect Model. Milestones and metrics are defined for measurable progress.</p>
+            </FloatingCard>
+            <FloatingCard className="p-8">
+              <h3 className="text-xl font-bold text-[#001C3E] mb-4">3. Ongoing Support & Results</h3>
+              <p className="text-gray-700">Through regular sessions, feedback, and accountability, you’ll develop new skills, overcome obstacles, and achieve sustainable transformation—both professionally and personally.</p>
+            </FloatingCard>
+          </div>
+        </div>
+      </AnimatedSection>
+
       {/* CTA */}
       <AnimatedSection className="py-20 bg-gradient-to-r from-[#001C3E] to-blue-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -165,4 +234,5 @@ const AboutPage: React.FC = () => {
     </div>
   );
 };
+export default AboutPage;
 export default AboutPage;

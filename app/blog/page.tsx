@@ -1,5 +1,6 @@
 import React from 'react';
 import { Calendar, User, ArrowRight, BookOpen } from 'lucide-react';
+import Head from 'next/head';
 
 // Helper to generate blog URLs
 const getBlogUrl = (title: string) =>
@@ -50,13 +51,34 @@ const BlogPage: React.FC = () => {
 
   return (
     <div>
+      <Head>
+        <title>Executive Coaching Blog | Growth Mindset, Career Change, Leadership Development & GEM Insights</title>
+        <meta
+          name="description"
+          content="Explore executive coaching articles, growth mindset tips, career change strategies, leadership development, goal setting at work, and professional identity counseling from Eric Horwitz and the GEM coaching community. Find career growth plan templates, midlife career change advice, and more."
+        />
+        <meta
+          name="keywords"
+          content="executive coaching blog, growth mindset, career change in 40s, leadership development, career growth plan template, goal setting at work, professional identity counseling, GEM coaching, Eric Horwitz, career transitions, personal growth, career development, work goals to set, midlife career crisis, coaching programs, leadership development programs, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, coaching articles, NYC executive coach"
+        />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSW578WSLS"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GSW578WSLS');
+          `
+        }} />
+      </Head>
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <BookOpen className="h-12 w-12 mx-auto mb-4" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">GEM Insights Blog</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Executive Coaching Blog: Growth Mindset, Career Change & Leadership</h1>
           <p className="text-xl text-blue-100">
-            Thought leadership, practical tools, and insights from the GEM coaching community
+            Explore thought leadership, growth mindset activities, career growth plan templates, and leadership development strategies from Eric Horwitz and the GEM coaching community. Find expert advice on career change in your 30s, 40s, and 50s, goal setting at work, and professional identity counseling.
           </p>
         </div>
       </section>
@@ -64,7 +86,7 @@ const BlogPage: React.FC = () => {
       {/* Featured Post */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Article</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Article: Career Growth, Leadership & Mindset</h2>
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <img
@@ -98,7 +120,8 @@ const BlogPage: React.FC = () => {
                     rel="noopener noreferrer"
                     className="text-[#001C3E] font-semibold hover:underline flex items-center"
                   >
-                    Read More <ArrowRight className="ml-1 h-4 w-4" />
+                    {`Read More about ${featuredPosts[0].title}`}{' '}
+                    <ArrowRight className="ml-1 h-4 w-4" />
                   </a>
                 </div>
               </div>
@@ -110,6 +133,7 @@ const BlogPage: React.FC = () => {
       {/* Blog Summaries */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-[#001C3E] mb-8">Latest Coaching Articles, Growth Mindset Tips & Career Change Stories</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {featuredPosts.map((post, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200 flex flex-col">
@@ -143,7 +167,8 @@ const BlogPage: React.FC = () => {
                     rel="noopener noreferrer"
                     className="text-[#001C3E] font-semibold hover:underline flex items-center mt-auto"
                   >
-                    Read More <ArrowRight className="ml-1 h-4 w-4" />
+                    {`Read More about ${post.title}`}{' '}
+                    <ArrowRight className="ml-1 h-4 w-4" />
                   </a>
                 </div>
               </div>

@@ -69,18 +69,18 @@ const AboutPage: React.FC = () => {
             </div>
             <div className="md:w-1/2 flex flex-col gap-8">
               <div>
-                <h2 className="text-2xl font-bold text-[#001C3E] mb-2">Early Life & Education</h2>
+                <h2 className="text-2xl font-bold text-[#001C3E] mb-2">Educational Foundation</h2>
                 <p className="text-base text-gray-700 leading-relaxed mb-4">
-                  <span className="font-semibold">Born August 5, 1967, in Denver, Colorado</span>, Eric was the "watcher" child who alternated years between journaling and living experiences.
-                  He earned his <span className="font-semibold">B.A. in Economics from Columbia University</span> in 1990, where he developed a fascination with human motivation and organizational behavior.
+                  Eric earned his <span className="font-semibold">B.A. in Economics from Columbia University</span>, where he developed a deep fascination with human motivation and organizational behavior. 
+                  His academic foundation in economics provided analytical rigor that would later inform his systematic approach to leadership development and transformation.
                 </p>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-[#001C3E] mb-2">Corporate Career</h2>
+                <h2 className="text-2xl font-bold text-[#001C3E] mb-2">Executive Leadership Experience</h2>
                 <p className="text-base text-gray-700 leading-relaxed mb-4">
-                  Eric spent <span className="font-semibold">14 years in HR leadership (SVP) and consulting at PwC</span>, specializing in large-scale talent development and cultural change.
-                  He even took a brief detour into stand-up comedy, honing skills in storytelling and reading the room.
-                  The events of <span className="font-semibold">9/11 proved catalytic</span>—seeing life's fragility, Eric committed to purpose-driven work.
+                  Eric brings <span className="font-semibold">14 years of senior HR leadership experience as SVP and management consultant at PwC</span>, where he specialized in large-scale talent development and organizational transformation.
+                  His diverse background includes expertise in storytelling and communication, skills that enhance his ability to connect with and inspire leaders at all levels.
+                  A pivotal moment in his career came following 9/11, when Eric redirected his focus toward purpose-driven work that creates meaningful impact.
                 </p>
               </div>
               <div>
@@ -98,11 +98,10 @@ const AboutPage: React.FC = () => {
                 </p>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-[#001C3E] mb-2">Philosophy & Personal Life</h2>
+                <h2 className="text-2xl font-bold text-[#001C3E] mb-2">Professional Expertise & Approach</h2>
                 <p className="text-base text-gray-700 leading-relaxed mb-4">
-                  Eric integrates <span className="font-semibold">Ikigai, Maslow's Hierarchy, Attractive Selling, and his proprietary Architect Model (Vision → Plan → Practice → Impact)</span>.
-                  Based in New York City, he's an avid music lover, museum stroller, and proud grandfather who explores NYC through a child's eyes.
-                  Known for his contagious optimism: <span className="italic">"Why introduce negative?"</span>
+                  Eric integrates <span className="font-semibold">proven frameworks including Ikigai, Maslow's Hierarchy, Attractive Selling, and his proprietary Architect Model (Vision → Plan → Practice → Impact)</span> to deliver measurable results.
+                  Based in New York City, he brings a collaborative, optimistic approach to leadership development, guided by his core belief that sustainable transformation requires both strategic thinking and practical application.
                 </p>
               </div>
             </div>

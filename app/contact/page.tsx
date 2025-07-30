@@ -84,7 +84,7 @@ const ContactPage: React.FC = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Let's Architect Your Future Together</h1>
           <p className="text-xl text-blue-100">
             Ready to transform your purpose into performance? Let's start the conversation.<br />
-            <span className="font-semibold">For more, visit <a href="https://gem.coach" className="underline hover:text-blue-200" target="_blank" rel="noopener noreferrer">gem.coach</a></span>
+            <span className="font-semibold">For additional resources, visit <a href="https://gem.coach" className="underline hover:text-blue-200" target="_blank" rel="noopener noreferrer">gem.coach</a></span>
           </p>
         </div>
       </section>
@@ -96,7 +96,7 @@ const ContactPage: React.FC = () => {
             
             {/* Contact Form */}
             <FloatingCard className="p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Request Consultation</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Name */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -221,14 +221,14 @@ const ContactPage: React.FC = () => {
                   className="w-full bg-gradient-to-r from-[#001C3E] to-blue-800 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center disabled:opacity-50"
                 >
                   <Send className="mr-2 h-5 w-5" />
-                  {status === 'loading' ? 'Submitting…' : 'Contact Coach E Now'}
+                  {status === 'loading' ? 'Submitting…' : 'Submit Inquiry'}
                 </button>
 
                 {status === 'success' && (
-                  <p className="text-green-600 text-center">Thank you! We will be in touch soon.</p>
+                  <p className="text-green-600 text-center">Thank you for your inquiry. We will contact you within 24 hours.</p>
                 )}
                 {status === 'error' && (
-                  <p className="text-red-600 text-center">Something went wrong. Please try again.</p>
+                  <p className="text-red-600 text-center">We apologize for the inconvenience. Please try again or contact us directly.</p>
                 )}
               </form>
             </FloatingCard>
@@ -238,7 +238,7 @@ const ContactPage: React.FC = () => {
               
               {/* Direct Contact */}
               <FloatingCard className="p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">Direct Contact</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">Professional Contact</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-[#001C3E] mr-3" />
@@ -258,7 +258,7 @@ const ContactPage: React.FC = () => {
 
               {/* Office Hours */}
               <FloatingCard className="p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Office Hours</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Business Hours</h3>
                 <div className="space-y-2 text-gray-700">
                   <div className="flex justify-between">
                     <span>Monday - Friday</span>
@@ -294,7 +294,7 @@ const ContactPage: React.FC = () => {
             rel="noopener noreferrer"
             className="inline-block bg-white text-[#001C3E] px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
-            Visit gem.coach for more info or to book a session
+            Visit gem.coach to learn more about our programs
           </a>
         </div>
       </section>

@@ -62,7 +62,7 @@ const Header: React.FC = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Link
-              href="/coaching"
+              href="/contact"
               className="bg-gradient-to-r from-[#001C3E] to-blue-800 text-white px-6 py-2 rounded-xl font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
               Work with Eric
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
                 </Link>
               ))}
               <Link
-                href="/coaching"
+                href="/contact"
                 className="bg-gradient-to-r from-[#001C3E] to-blue-800 text-white px-6 py-2 rounded-xl font-medium hover:shadow-lg transition-all duration-300 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >

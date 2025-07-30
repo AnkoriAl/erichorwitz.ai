@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Sparkles } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import FloatingCard from '../components/FloatingCard';
+import Head from 'next/head';
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -71,6 +72,17 @@ const ContactPage: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <title>Contact Eric Horwitz | Executive & Leadership Coaching Consultation</title>
+        <meta
+          name="description"
+          content="Request a consultation with executive & leadership coach Eric Horwitz. Submit your inquiry to explore personalized coaching, signature programs, and transformational workshops."
+        />
+        <meta
+          name="keywords"
+          content="contact Eric Horwitz, executive coaching consultation, leadership coaching inquiry, GEM Coaching contact, coaching programs, professional development"
+        />
+      </Head>
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#001C3E] via-blue-900 to-indigo-900 text-white py-20 relative overflow-hidden">
         <div
@@ -81,10 +93,11 @@ const ContactPage: React.FC = () => {
             <Sparkles className="h-4 w-4 mr-2" />
             <span className="text-sm font-medium">Ready to Transform?</span>
           </div>
+          <h1 className="sr-only">Contact Eric Horwitz — Executive & Leadership Coaching Consultation</h1>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Let's Architect Your Future Together</h1>
           <p className="text-xl text-blue-100">
             Ready to transform your purpose into performance? Let's start the conversation.<br />
-            <span className="font-semibold">For additional resources, visit <a href="https://gem.coach" className="underline hover:text-blue-200" target="_blank" rel="noopener noreferrer">gem.coach</a></span>
+            <span className="font-semibold">For additional resources, visit <a href="https://gem.coach" className="underline hover:text-blue-200" target="_blank" rel="noopener noreferrer">GEM Coaching website</a></span>
           </p>
         </div>
       </section>
@@ -164,7 +177,7 @@ const ContactPage: React.FC = () => {
                 {/* Challenge Area */}
                 <div>
                   <label htmlFor="challengeArea" className="block text-sm font-medium text-gray-700 mb-2">
-                    Challenge Area *
+                    Which program are you interested in? *
                   </label>
                   <select
                     id="challengeArea"
@@ -174,10 +187,11 @@ const ContactPage: React.FC = () => {
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#001C3E] focus:border-transparent transition-all duration-300"
                   >
-                    <option value="Career">Career</option>
-                    <option value="Leadership">Leadership</option>
-                    <option value="Life Design">Life Design</option>
-                    <option value="Relationship">Relationship</option>
+                    <option value="Executive Coaching">Executive Coaching</option>
+                    <option value="The Treasure Chest">The Treasure Chest</option>
+                    <option value="The Renaissance Academy">The Renaissance Academy</option>
+                    <option value="Thriver">Thriver</option>
+                    <option value="Corporate Offsites">Corporate Offsites</option>
                     <option value="Other">Other</option>
                   </select>
                 </div>
@@ -294,7 +308,7 @@ const ContactPage: React.FC = () => {
             rel="noopener noreferrer"
             className="inline-block bg-white text-[#001C3E] px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
-            Visit gem.coach to learn more about our programs
+            Visit GEM Coaching to learn more about our programs
           </a>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { Quote, Heart, Users, Lightbulb, Target, Sparkles } from 'lucide-react';
+import { Quote, Heart, Users, Lightbulb, Target, Sparkles, Award, BadgeCheck, Globe, Briefcase, BookOpen, TrendingUp } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import FloatingCard from '../components/FloatingCard';
 
@@ -36,49 +36,123 @@ const AboutPage: React.FC = () => {
     }
   ];
 
+  const credentials = [
+    { icon: Award,    text: '20+ years coaching leaders, founders, and professionals on growth mindset and career transitions' },
+    { icon: BadgeCheck, text: 'Certified Professional Coach (ICF, Columbia University)' },
+    { icon: Globe,    text: 'Founder & CEO of GEM Coaching' },
+    { icon: Briefcase, text: 'Facilitator for tailored leadership‑development programs across multiple industries' }
+  ];
+
+  const programs = [
+    { icon: BookOpen, href: 'https://gem.coach/treasure-chest',  title: 'The Treasure Chest', description: 'A collaborative community of self-improvers who strengthen skills and expand quality connections through shared learning and collective wisdom.' },
+    { icon: TrendingUp, href: 'https://gem.coach/thriver', title: 'Thriver Program',     description: 'Deep‑accountability mastermind for midlife career change, work goal setting, and burnout recovery.' },
+    { icon: Sparkles,  href: 'https://gem.coach/blog', title: 'Growth Resources',    description: 'Explore inspiring blog posts filled with growth mindset quotes, goal-setting strategies, and career development tools—curated to help you improve and thrive.' }
+  ];
+
   return (
     <div>
       <Head>
-        <title>About Eric Horwitz | Executive Coach for Career Change, Growth Mindset & Leadership</title>
-        <meta name="description" content="Learn about Eric Horwitz, a leading NYC executive coach specializing in career change, growth mindset, leadership development, and professional identity counseling. Discover his approach to career growth plan templates, work goal setting, and midlife career transitions." />
-        <meta name="keywords" content="about Eric Horwitz, executive coach, career growth plan template, growth mindset, leadership development, career change in 40s, professional identity counseling, work goals to set, goal setting at work, midlife career crisis, GEM coaching, NYC, career transitions, personal development, professional development committee, career path decide, career zen, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, coaching programs, leadership development programs" />
+        <title>About Eric Horwitz | NYC Executive Coach for Career Transitions & Leadership</title>
+        <meta name="description" content="Meet Eric Horwitz, founder of GEM Coaching and leader in career transformation, executive development, and burnout recovery. Discover his coaching philosophy, client success, and signature frameworks." />
+        <meta name="keywords" content="Eric Horwitz, executive coach, career transitions, leadership development, burnout recovery, GEM Coaching, New York City coaching" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:title" content="About Eric Horwitz | GEM Coaching" />
+        <meta property="og:description" content="Learn about Eric's story, credentials, and programs." />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Eric Horwitz",
+              "jobTitle": "Executive Coach",
+              "url": "https://www.erichorwitz.ai/about",
+              "affiliation": {
+                "@type": "Organization",
+                "name": "GEM Coaching"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/in/erichorwitz",
+                "https://www.gem.coach"
+              ]
+            })
+          }}
+        />
       </Head>
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h1 className="text-5xl font-bold text-[#001C3E] mb-8">About Eric Horwitz: Executive Coach for Career Change, Growth Mindset & Leadership</h1>
-        <section className="mb-12">
-          <p className="text-xl text-gray-700 mb-6">
-            Eric Horwitz is a leading executive coach, growth mindset advocate, and founder of GEM Coaching in NYC. With over 20 years of experience, Eric empowers professionals, leaders, and organizations to achieve breakthrough results, navigate career transitions, and develop a resilient professional identity.
-          </p>
-          <p className="text-lg text-gray-600 mb-4">
-            Specializing in <strong>career change in your 30s, 40s, and 50s</strong>, Eric’s coaching blends strategic rigor, human insight, and proven frameworks for leadership development, goal setting at work, and burnout recovery. He is known for his work on career growth plan templates, professional identity counseling, and supporting clients through midlife career crisis symptoms.
-          </p>
-          <p className="text-lg text-gray-600">
-            Based in New York City, Eric serves clients globally, offering one-on-one executive coaching, group programs, and workshops for organizations seeking to foster a culture of growth, resilience, and purpose. Try his <a href="/resources" className="underline hover:text-blue-700">career growth plan template</a>, <a href="/resources" className="underline hover:text-blue-700">goal setting worksheet</a>, and <a href="/resources" className="underline hover:text-blue-700">free career quiz for students and professionals</a>.
-          </p>
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        {/* Hero */}
+        <section className="mb-20 grid gap-10 md:grid-cols-2 items-center">
+          <div className="flex justify-center md:justify-start">
+            <img
+              src="https://media.licdn.com/dms/image/sync/v2/D4E27AQEBwIKK59igGQ/articleshare-shrink_800/articleshare-shrink_800/0/1735395803533?e=2147483647&v=beta&t=k5j7jZldW3degFRM9eKhla5G9hJL2ftTMEsdFuJHoqc"
+              alt="Portrait of Eric Horwitz, Executive Coach"
+              loading="lazy"
+              className="rounded-3xl shadow-xl object-cover w-[450px] h-[450px] border-4 border-[#001C3E]"
+            />
+          </div>
+          <div>
+            <h1 className="text-5xl font-bold text-[#001C3E] mb-6 leading-tight">About Eric Horwitz</h1>
+            <p className="text-xl text-gray-700 mb-4">Executive Coach for Career Change, Growth Mindset &amp; Leadership</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+              <FloatingCard className="flex gap-4 p-6 items-center group">
+                <Users className="h-8 w-8 text-[#001C3E] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                <p className="text-gray-700 leading-relaxed">20+ years empowering high‑performers, executives &amp; change agents globally.</p>
+              </FloatingCard>
+              <FloatingCard className="flex gap-4 p-6 items-center group">
+                <Sparkles className="h-8 w-8 text-[#001C3E] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                <p className="text-gray-700 leading-relaxed">Expert in midlife career transitions, burnout recovery &amp; leadership growth.</p>
+              </FloatingCard>
+              <FloatingCard className="flex gap-4 p-6 items-center group">
+                <Briefcase className="h-8 w-8 text-[#001C3E] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                <p className="text-gray-700 leading-relaxed">Trusted advisor to leaders and changemakers at organizations including Credit Suisse, IDEO, NYC DOE, Google, and more.</p>
+              </FloatingCard>
+              <FloatingCard className="flex gap-4 p-6 items-center group">
+                <Award className="h-8 w-8 text-[#001C3E] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                <p className="text-gray-700 leading-relaxed">Founder of GEM Coaching &amp; creator of the Renaissance Academy and Treasure Chest community.</p>
+              </FloatingCard>
+            </div>
+          </div>
         </section>
-        <section className="mb-12">
+        <section id="credentials" className="mb-12">
           <h2 className="text-3xl font-bold text-[#001C3E] mb-4">Credentials & Experience in Leadership Development</h2>
-          <ul className="list-disc list-inside text-lg text-gray-700">
-            <li>20+ years coaching leaders, founders, and professionals on growth mindset and career transitions</li>
-            <li>Certified Professional Coach (ICF, Columbia University)</li>
-            <li>Founder of GEM Coaching and the Renaissance Academy for coaching-skills certification</li>
-            <li>Facilitator for leadership development programs at Fortune 500 companies</li>
-            <li>Featured in The New York Times, Vogue, and Columbia University</li>
-          </ul>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {credentials.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <FloatingCard key={index} className="flex gap-4 p-6 items-start group" delay={index * 0.1}>
+                  <Icon className="h-8 w-8 text-[#001C3E] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                  <p className="text-gray-700 leading-relaxed">{item.text}</p>
+                </FloatingCard>
+              );
+            })}
+          </div>
         </section>
-        <section className="mb-12">
+        <section id="philosophy" className="mb-12">
           <h2 className="text-3xl font-bold text-[#001C3E] mb-4">Coaching Philosophy: Growth Mindset & Purpose</h2>
           <p className="text-lg text-gray-600">
             Eric believes that purpose isn’t found—it’s forged. His coaching empowers clients to clarify their vision, set meaningful work goals, and develop the growth mindset needed to thrive in today’s dynamic world. Explore <a href="/programs" className="underline hover:text-blue-700">leadership development programs</a> and <a href="/resources" className="underline hover:text-blue-700">growth mindset activities</a> to accelerate your journey.
           </p>
+
         </section>
-        <section className="mb-12">
+        <section id="programs" className="mb-12">
           <h2 className="text-3xl font-bold text-[#001C3E] mb-4">Signature Programs & Resources</h2>
-          <ul className="list-disc list-inside text-lg text-gray-700">
-            <li><a href="/programs" className="underline hover:text-blue-700">Renaissance Academy</a>: Career transition resume examples, interview training skills, and professional identity counseling for aspiring coaches.</li>
-            <li><a href="/programs" className="underline hover:text-blue-700">Thriver Program</a>: Deep-accountability mastermind for midlife career change, work goal setting, and burnout recovery.</li>
-            <li><a href="/resources" className="underline hover:text-blue-700">Growth mindset quotes</a>, <a href="/resources" className="underline hover:text-blue-700">goal setting books</a>, and <a href="/resources" className="underline hover:text-blue-700">career quizzes</a> for ongoing development.</li>
-          </ul>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {programs.map((prog, index) => {
+              const Icon = prog.icon;
+              return (
+                <FloatingCard key={index} className="p-6 text-center group" delay={index * 0.1}>
+                  <div className="bg-gradient-to-r from-[#001C3E] to-blue-800 text-white p-4 rounded-xl w-fit mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="h-8 w-8" />
+                  </div>
+                  <Link href={prog.href} className="hover:underline">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{prog.title}</h3>
+                  </Link>
+                  <p className="text-gray-700">{prog.description}</p>
+                </FloatingCard>
+              );
+            })}
+          </div>
+
         </section>
         <section>
           <h2 className="text-3xl font-bold text-[#001C3E] mb-4">Ready to Start Your Career Growth Journey?</h2>
@@ -94,8 +168,9 @@ const AboutPage: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-12 mb-16 bg-white rounded-3xl shadow-2xl p-8">
             <div className="flex-shrink-0 flex justify-center items-center w-full md:w-1/2">
               <img
-                src="https://media.licdn.com/dms/image/sync/v2/D4E27AQEBwIKK59igGQ/articleshare-shrink_800/articleshare-shrink_800/0/1735395803533?e=2147483647&v=beta&t=k5j7jZldW3degFRM9eKhla5G9hJL2ftTMEsdFuJHoqc"
-                alt="Eric Horwitz"
+                src="https://res.cloudinary.com/breather-com/image/upload/v1516308810/Breather_NYC_EricHorwitz-0108_wdgmyi.jpg"
+                alt="Eric Horwitz speaking at a leadership workshop"
+                loading="lazy"
                 className="rounded-3xl shadow-xl object-cover w-[400px] h-[400px] border-4 border-[#001C3E]"
                 style={{ maxWidth: "100%", height: "auto" }}
               />
@@ -136,6 +211,9 @@ const AboutPage: React.FC = () => {
                   Eric integrates <span className="font-semibold">proven frameworks including Ikigai, Maslow's Hierarchy, Attractive Selling, and his proprietary Architect Model (Vision → Plan → Practice → Impact)</span> to deliver measurable results.
                   Based in New York City, he brings a collaborative, optimistic approach to leadership development, guided by his core belief that sustainable transformation requires both strategic thinking and practical application.
                 </p>
+                <Link href="/coaching" className="text-blue-700 underline font-semibold hover:text-blue-900 transition-all">
+                  Explore Coaching with Eric →
+                </Link>
               </div>
             </div>
           </div>

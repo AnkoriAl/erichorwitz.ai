@@ -3,11 +3,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { Quote, Heart, Users, Lightbulb, Target, Sparkles } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
-import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import { Quote, Heart, Users, Lightbulb, Target, Sparkles } from 'lucide-react';
-import AnimatedSection from '../components/AnimatedSection';
 import FloatingCard from '../components/FloatingCard';
 
 const AboutPage: React.FC = () => {
@@ -234,5 +229,4 @@ const AboutPage: React.FC = () => {
     </div>
   );
 };
-export default AboutPage;
 export default AboutPage;

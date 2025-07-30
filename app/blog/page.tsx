@@ -62,15 +62,6 @@ const BlogPage: React.FC = () => {
           content="executive coaching blog, growth mindset, career change in 40s, leadership development, career growth plan template, goal setting at work, professional identity counseling, GEM coaching, Eric Horwitz, career transitions, personal growth, career development, work goals to set, midlife career crisis, coaching programs, leadership development programs, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, coaching articles, NYC executive coach"
         />
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSW578WSLS"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-GSW578WSLS');
-          `
-        }} />
       </Head>
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">

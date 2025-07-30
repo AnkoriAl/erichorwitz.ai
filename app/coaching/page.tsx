@@ -69,15 +69,6 @@ const CoachingPage: React.FC = () => {
           content="executive coaching, growth mindset, career change in 40s, leadership development, career growth plan template, goal setting at work, professional identity counseling, GEM Coaching, Eric Horwitz, Thriver Program, Treasure Chest, team development workshops, corporate leadership coaching, personal development, work goals to set, midlife career crisis, coaching programs, leadership development programs, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, NYC executive coach"
         />
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSW578WSLS"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-GSW578WSLS');
-          `
-        }} />
       </Head>
       <section className="bg-gradient-to-br from-[#001C3E] via-blue-900 to-indigo-900 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-white/5" />

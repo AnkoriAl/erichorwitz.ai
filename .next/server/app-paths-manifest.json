@@ -1,8 +1,7 @@
 {
   "/coaching/page": "app/coaching/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/quotes/page": "app/quotes/page.js",
+  "/testimonials/page": "app/testimonials/page.js",
   "/contact/page": "app/contact/page.js",
-  "/resources/page": "app/resources/page.js",
-  "/testimonials/page": "app/testimonials/page.js"
+  "/blog/page": "app/blog/page.js",
+  "/quotes/page": "app/quotes/page.js"
 }

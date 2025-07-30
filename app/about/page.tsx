@@ -42,16 +42,6 @@ const AboutPage: React.FC = () => {
         <title>About Eric Horwitz | Executive Coach for Career Change, Growth Mindset & Leadership</title>
         <meta name="description" content="Learn about Eric Horwitz, a leading NYC executive coach specializing in career change, growth mindset, leadership development, and professional identity counseling. Discover his approach to career growth plan templates, work goal setting, and midlife career transitions." />
         <meta name="keywords" content="about Eric Horwitz, executive coach, career growth plan template, growth mindset, leadership development, career change in 40s, professional identity counseling, work goals to set, goal setting at work, midlife career crisis, GEM coaching, NYC, career transitions, personal development, professional development committee, career path decide, career zen, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, coaching programs, leadership development programs" />
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSW578WSLS"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-GSW578WSLS');
-          `
-        }} />
       </Head>
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <h1 className="text-5xl font-bold text-[#001C3E] mb-8">About Eric Horwitz: Executive Coach for Career Change, Growth Mindset & Leadership</h1>

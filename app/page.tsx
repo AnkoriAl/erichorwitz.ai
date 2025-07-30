@@ -81,15 +81,6 @@ const Home: React.FC = () => {
         <meta name="description" content="Navigate your career change, set work goals, and develop a growth mindset with a leading NYC executive coach. Eric Horwitz offers leadership development, career growth plan templates, and professional identity counseling for professionals in their 30s, 40s, and 50s." />
         <meta name="keywords" content="career growth plan template, career path decide, career path logistics, career growth quote, career zen, professional development committee, career change in 40s, career change 30s, career transition resume examples, career change 45, self recognition test, development human resources, career quiz teens, free career quiz for students, career quiz teenager, technology career quiz, job search career quiz, best jobs for a midlife career change, good careers for midlife career change, midlife career crisis symptoms, jobs identity and access management, work goals to set, work goal ideas, work objective sample, purpose of a job, professional identity counseling, work function symbol, growth mindset book, growth mindset quotes, growth mindset pictures, growth mindset activities, goal setting at work, goal setting books, growth mindset bulletin board, goal setting excel template, IT goal setting, quote on growth mindset, quote about growth mindset, book growth mindset, personal goal setting examples, template goal setting, quote on goal setting, what is growth mindset, example of growth mindset, development goal setting examples, pdf goal setting worksheet, goal setting example for work, 12 stages of burnout, burnout, career transitions, interview help desk questions, interview training skills, Eric Horwitz, executive coach, leadership development, NYC, GEM coaching, professional development, leadership development programs" />
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSW578WSLS"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-GSW578WSLS');
-          `
-        }} />
       </Head>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#001C3E] via-blue-900 to-indigo-900 text-white overflow-hidden">

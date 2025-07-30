@@ -94,7 +94,7 @@ const AboutPage: React.FC = () => {
                 <h2 className="text-2xl font-bold text-[#001C3E] mb-2">Coaching Achievements</h2>
                 <p className="text-base text-gray-700 leading-relaxed mb-4">
                   Eric has coached leaders at <span className="font-semibold">Credit Suisse, Reuters, IDEO, Google, NYC DOE, and beyond</span>.
-                  He chairs the <span className="font-semibold">Columbia University Career Coaching Network (400k+ alumni)</span> and has built a referral-only practice spanning 9 client "layers" worldwide.
+                  He chairs the <span className="font-semibold">Columbia University Career Coaching Network (400k+ alumni)</span> and founded <span className="font-semibold">GEM (Gennex Management), a purpose-driven ecosystem and coaching network committed to guiding individuals and organizations through transformation, evolution, and meaningful connection worldwide</span>.
                 </p>
               </div>
               <div>

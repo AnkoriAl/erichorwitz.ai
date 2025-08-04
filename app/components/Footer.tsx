@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Linkedin, Youtube, Headphones } from 'lucide-react';
+import { Linkedin, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             <h3 className="font-semibold mb-4">Connect</h3>
             <div className="space-y-3">
               <a
-                href="https://linkedin.com/company/gem-coaching"
+                href="https://www.linkedin.com/in/gemllc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-gray-300 hover:text-white hover:scale-105 transition-all duration-300"
@@ -54,22 +54,13 @@ const Footer: React.FC = () => {
                 <span>LinkedIn</span>
               </a>
               <a
-                href="https://youtube.com/gemchannel"
+                href="https://www.instagram.com/gemcoachingnetwork/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-gray-300 hover:text-white hover:scale-105 transition-all duration-300"
               >
-                <Youtube className="h-4 w-4" />
-                <span>YouTube</span>
-              </a>
-              <a
-                href="https://open.spotify.com/show/shiny-things"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-gray-300 hover:text-white hover:scale-105 transition-all duration-300"
-              >
-                <Headphones className="h-4 w-4" />
-                <span>Podcast (Shiny Things)</span>
+                <Instagram className="h-4 w-4" />
+                <span>Instagram</span>
               </a>
             </div>
           </div>
@@ -81,11 +72,8 @@ const Footer: React.FC = () => {
             © 2005-2025 Eric Horwitz. All rights reserved.
           </div>
           <div className="text-gray-300 text-sm">
-            <a href="mailto:hello@gem.coach" className="hover:text-white transition-colors mr-4">
-              hello@gem.coach
-            </a>
-            <a href="tel:+12125550190" className="hover:text-white transition-colors">
-              +1 (212) 555-0190
+            <a href="mailto:info@gem.coach" className="hover:text-white transition-colors">
+              info@gem.coach
             </a>
           </div>
         </div>

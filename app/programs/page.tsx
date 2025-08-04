@@ -1,18 +1,29 @@
 import React from 'react';
 import { Award, Users, Gem } from 'lucide-react';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const ProgramsPage: React.FC = () => {
   return (
     <div>
+      <Head>
+        <title>GEM Coaching Programs | Treasure Chest, Renaissance Academy & Thriver Program | Eric Horwitz</title>
+        <meta
+          name="description"
+          content="Explore GEM Coaching's signature programs: The Treasure Chest community, Renaissance Academy certification, and Thriver Program. Transform your potential through community, certification, and deep accountability with Eric Horwitz."
+        />
+        <meta
+          name="keywords"
+          content="GEM coaching programs, Treasure Chest community, Renaissance Academy, Thriver Program, Eric Horwitz programs, group coaching, coaching certification, professional development, leadership programs, career transformation, coaching community"
+        />
+      </Head>
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">GEM Programs</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">GEM Coaching Programs</h1>
           <p className="text-xl text-blue-100">
-            Transform your potential through community, certification, and deep accountability
+            Transform your potential through community, certification, and deep accountability programs designed for lasting growth and meaningful impact.
           </p>
-        {/* Google Analytics */}
         </div>
       </section>
 

@@ -78,8 +78,8 @@ const Home: React.FC = () => {
     <div>
       <Head>
         <title>Executive Coach for Career Change, Growth Mindset & Leadership | Eric Horwitz</title>
-        <meta name="description" content="Navigate your career change, set work goals, and develop a growth mindset with a leading NYC executive coach. Eric Horwitz offers leadership development, career growth plan templates, and professional identity counseling for professionals in their 30s, 40s, and 50s." />
-        <meta name="keywords" content="career growth plan template, career path decide, career path logistics, career growth quote, career zen, professional development committee, career change in 40s, career change 30s, career transition resume examples, career change 45, self recognition test, development human resources, career quiz teens, free career quiz for students, career quiz teenager, technology career quiz, job search career quiz, best jobs for a midlife career change, good careers for midlife career change, midlife career crisis symptoms, jobs identity and access management, work goals to set, work goal ideas, work objective sample, purpose of a job, professional identity counseling, work function symbol, growth mindset book, growth mindset quotes, growth mindset pictures, growth mindset activities, goal setting at work, goal setting books, growth mindset bulletin board, goal setting excel template, IT goal setting, quote on growth mindset, quote about growth mindset, book growth mindset, personal goal setting examples, template goal setting, quote on goal setting, what is growth mindset, example of growth mindset, development goal setting examples, pdf goal setting worksheet, goal setting example for work, 12 stages of burnout, burnout, career transitions, interview help desk questions, interview training skills, Eric Horwitz, executive coach, leadership development, NYC, GEM coaching, professional development, leadership development programs" />
+        <meta name="description" content="Transform your career and leadership potential with NYC executive coach Eric Horwitz. Specializing in career transitions, growth mindset development, and leadership coaching for professionals seeking meaningful change and breakthrough results." />
+        <meta name="keywords" content="executive coach NYC, career transition coach, leadership development, growth mindset coaching, career change 40s, midlife career change, professional development, burnout recovery, work goal setting, leadership training, career transformation, executive coaching New York, GEM coaching, Eric Horwitz coach, purpose-driven career, leadership skills development" />
         {/* Google Analytics */}
       </Head>
       {/* Hero Section */}
@@ -99,7 +99,7 @@ const Home: React.FC = () => {
                 className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6"
               >
                 <Sparkles className="h-4 w-4 mr-2" />
-                <span className="text-sm font-medium">20+ Years Transforming Leaders, Career Changers & Growth Mindset Seekers</span>
+                <span className="text-sm font-medium">Over 20 years transforming leaders, career changers, and growth mindset seekers.</span>
               </motion.div>
               <h1 className="sr-only">Executive Coaching, Career Growth Plan Template, Growth Mindset & Career Change in NYC | Eric Horwitz</h1>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -109,7 +109,7 @@ const Home: React.FC = () => {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="block"
                 >
-                  Architect Your Career Path & Growth Mindset
+                  Design Your Career Path and Growth Mindset
                 </motion.span>
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
                   transition={{ duration: 0.6, delay: 0.4 }}
                   className="block bg-gradient-to-r from-blue-200 to-cyan-200 bg-clip-text text-transparent"
                 >
-                  Future Success
+                  For Future Success
                 </motion.span>
               </h1>
               <motion.p
@@ -126,7 +126,7 @@ const Home: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed"
               >
-                Executive coach and professional development committee advisor empowering leaders, entrepreneurs, and career changers to forge their purpose, set work goals, and overcome midlife career crisis symptoms. Explore growth mindset activities, career quizzes, and goal setting at work for every stage of your journey.
+                An executive coach who empowers leaders, entrepreneurs, and professionals to transform their careers, cultivate a growth mindset, and create meaningful impact. He specializes in midcareer transitions, leadership development, and guiding high performers to overcome burnout and achieve breakthrough results.
               </motion.p>
               
               <motion.div
@@ -172,9 +172,9 @@ const Home: React.FC = () => {
                     transition={{ delay: 1 }}
                     className="text-xl italic font-light mb-2"
                   >
-                    "Purpose isn't found — it's forged."
+                    "Purpose is not found, it is forged."
                   </motion.blockquote>
-                  <cite className="text-blue-200 text-sm">— Eric Horwitz</cite>
+                  <cite className="text-blue-200 text-sm">Eric Horwitz</cite>
                 </div>
               </div>
             </motion.div>
@@ -185,12 +185,13 @@ const Home: React.FC = () => {
       {/* Brief Introduction & SEO Sections */}
       <AnimatedSection className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">20+ Years of Transforming Lives & Career Transitions</h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Executive & Life Coaching for leaders, founders, and organizations seeking breakthrough results. Based in New York City, serving clients globally. <br />
-            <span className="font-semibold">For more, visit <a href="https://gem.coach" className="underline hover:text-blue-200" target="_blank" rel="noopener noreferrer">gem.coach</a></span>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Over 20 years transforming lives and careers.</h2>
+          <p className="text-xl text-gray-700 mb-8">
+            Executive and life coaching for leaders, founders, and organizations seeking breakthrough results. Based in New York City and serving clients worldwide.
             <br />
-            <span className="block mt-2">Try our <a href="/resources" className="underline hover:text-blue-700">career growth plan template</a>, <a href="/resources" className="underline hover:text-blue-700">goal setting worksheet</a>, and <a href="/resources" className="underline hover:text-blue-700">free career quiz for students and professionals</a>.</span>
+            <span className="font-semibold">For more, visit <a href="https://gem.coach" className="underline hover:text-blue-700" target="_blank" rel="noopener noreferrer">gem.coach</a></span>
+            <br />
+            <span className="block mt-2">Explore our <a href="/resources" className="underline hover:text-blue-700">growth mindset resources</a>, <a href="/programs" className="underline hover:text-blue-700">signature programs</a>, and <a href="/coaching" className="underline hover:text-blue-700">coaching services</a> for transformational results.</span>
           </p>
         </div>
       </AnimatedSection>
@@ -244,7 +245,7 @@ const Home: React.FC = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
           >
             {[
-              { number: "20", label: "Years Coaching", icon: Award },
+              { number: "20", label: "Years of Coaching", icon: Award },
               { number: "400k+", label: "Columbia Alumni Served", icon: Users },
               { number: "200+", label: "Corporate Workshops", icon: Building },
               { number: "2,500+", label: "Lives Transformed", icon: Sparkles }
@@ -305,7 +306,11 @@ const Home: React.FC = () => {
                   )}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{program.title}</h3>
-                <p className="text-gray-600 mb-4">{program.description} {program.title === "Renaissance Academy" ? "Includes career transition resume examples, professional identity counseling, and interview training skills." : ""} {program.title === "Thriver Program" ? "Ideal for midlife career change, work goal setting, and burnout recovery." : ""}</p>
+                <p className="text-gray-600 mb-4">
+                  {program.description}
+                  {program.title === "Renaissance Academy" && " Includes leadership development training, professional coaching skills, and career transition support."}
+                  {program.title === "Thriver Program" && " Perfect for midlife career transitions, goal setting, and sustainable transformation."}
+                </p>
                 <Link href="/programs" className="text-[#001C3E] font-semibold hover:underline group-hover:translate-x-1 transition-transform duration-300 inline-flex items-center">
                   {`Learn More about ${program.title}`} <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
@@ -330,7 +335,7 @@ const Home: React.FC = () => {
                 className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300"
               >
                 <blockquote className="text-lg italic mb-4">"{testimonial.text}"</blockquote>
-                <cite className="text-blue-200">— {testimonial.author}</cite>
+                <cite className="text-blue-200">{testimonial.author}</cite>
               </motion.div>
             ))}
           </div>
@@ -385,8 +390,8 @@ const Home: React.FC = () => {
           >
             <Mail className="h-12 w-12 mx-auto mb-4 text-white" />
           </motion.div>
-          <h2 className="text-3xl font-bold mb-4" style={{ color: "#ffffffff" }}>Get Monthly Inspiration & Growth Mindset Tips</h2>
-          <p className="text-xl text-blue-100 mb-8" style={{ color: "#ffffffff" }}>Join the newsletter for tools, growth mindset quotes, and career path logistics from Eric.</p>
+          <h2 className="text-3xl font-bold mb-4 text-white">Get Monthly Inspiration & Growth Mindset Tips</h2>
+          <p className="text-xl text-blue-100 mb-8">Join the newsletter for practical tools, growth mindset insights, and coaching wisdom from Eric.</p>
           <div className="flex justify-center w-full">
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md w-full items-center">
               <input

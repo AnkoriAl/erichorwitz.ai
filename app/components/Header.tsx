@@ -61,12 +61,14 @@ const Header: React.FC = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Link
-              href="/contact"
+            <a
+              href="https://gem.coach"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gradient-to-r from-[#001C3E] to-blue-800 text-white px-6 py-2 rounded-xl font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
-              Work with Eric
-            </Link>
+              Visit GEM.Coach
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -100,13 +102,15 @@ const Header: React.FC = () => {
                   {item.label}
                 </Link>
               ))}
-              <Link
-                href="/contact"
+              <a
+                href="https://gem.coach"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gradient-to-r from-[#001C3E] to-blue-800 text-white px-6 py-2 rounded-xl font-medium hover:shadow-lg transition-all duration-300 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Work with Eric
-              </Link>
+                Visit GEM.Coach
+              </a>
             </nav>
           </div>
         )}

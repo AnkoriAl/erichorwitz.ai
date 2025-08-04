@@ -12,6 +12,33 @@ const getBlogUrl = (title: string) =>
 const BlogPage: React.FC = () => {
   const featuredPosts = [
     {
+      title: "Mastering Prioritization & Work Goal Ideas: How to Focus on What Matters Most",
+      excerpt: "We've all been there, staring down a never-ending to-do list, each item screaming for our attention. Learn how to cut through the chaos and focus on what truly matters with the Eisenhower Matrix and proactive prioritization strategies.",
+      category: "Personal Growth",
+      date: "Jan 6, 2025",
+      author: "Eric Horwitz",
+      image: "https://static.wixstatic.com/media/a372b4_6cd66a4f896f442f838e2bddbe8815da~mv2.png/v1/fill/w_980,h_654,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/a372b4_6cd66a4f896f442f838e2bddbe8815da~mv2.png",
+      url: "https://www.gem.coach/post/mastering-prioritization-and-work-goal-ideas"
+    },
+    {
+      title: "Creating Brave Circles: Safe Spaces and Open Dialogue in Group Facilitation",
+      excerpt: "Group facilitation is less about being the loudest voice in the room and more about tuning in to what others need to say. Discover the art of creating safe spaces, holding open dialogue, and facilitating meaningful professional development committee discussions.",
+      category: "Coaching Insights",
+      date: "Jan 5, 2025",
+      author: "Eric Horwitz",
+      image: "https://static.wixstatic.com/media/a372b4_9b1f0e838c3142e98bd0d096aacc3074~mv2.png/v1/fill/w_980,h_654,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/a372b4_9b1f0e838c3142e98bd0d096aacc3074~mv2.png",
+      url: "https://www.gem.coach/post/creatingbravecircles-professionaldevelopmentcommittee"
+    },
+    {
+      title: "Inside The Treasure Chest: Why This Group Coaching Circle by GEM Is More Than Just Another Self-Help Program",
+      excerpt: "It's one thing to want to grow, and it's another thing to actually do something about it. Enter The Treasure Chest, a collaborative community experience where collective wisdom empowers real transformation through structured reflection and authentic connection.",
+      category: "Group Coaching",
+      date: "Jan 4, 2025",
+      author: "Eric Horwitz",
+      image: "https://static.wixstatic.com/media/a372b4_8a13119f9b124cf5894af18960e27d94~mv2.png/v1/fill/w_980,h_654,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/a372b4_8a13119f9b124cf5894af18960e27d94~mv2.png",
+      url: "https://www.gem.coach/post/treasure-chest-group-coaching-circle"
+    },
+    {
       title: "Finish Strong: How Coaching Can Help You Achieve Your Year-End Goals",
       excerpt: "Discover why we struggle with adhering to our goals and how coaching can help! Caption: Participant at GEM's LIVE Coaching Event working...",
       category: "Coaching & Goals",
@@ -75,33 +102,35 @@ const BlogPage: React.FC = () => {
       </section>
 
       {/* Featured Post */}
-      <section className="py-16">
+      <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Article: Career Growth, Leadership & Mindset</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">Featured Article: Career Growth, Leadership & Mindset</h2>
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <img
                 src={featuredPosts[0].image}
                 alt={featuredPosts[0].title}
-                className="w-full h-64 lg:h-full object-cover"
+                className="w-full h-72 lg:h-full object-cover"
               />
-              <div className="p-8 lg:p-12">
-                <div className="flex items-center space-x-4 mb-4">
-                  <span className="bg-[#001C3E] text-white px-3 py-1 rounded-full text-xs font-medium">
-                    {featuredPosts[0].category}
-                  </span>
-                  <span className="text-gray-500 text-sm">Featured</span>
+              <div className="p-10 lg:p-16 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center space-x-4 mb-6">
+                    <span className="bg-[#001C3E] text-white px-4 py-2 rounded-full text-sm font-medium">
+                      {featuredPosts[0].category}
+                    </span>
+                    <span className="text-gray-500 text-sm font-medium">Featured</span>
+                  </div>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-6 leading-tight">{featuredPosts[0].title}</h3>
+                  <p className="text-gray-600 leading-relaxed mb-8 text-lg">{featuredPosts[0].excerpt}</p>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">{featuredPosts[0].title}</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">{featuredPosts[0].excerpt}</p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-4 text-sm text-gray-500">
+                <div className="flex items-center justify-between mt-auto">
+                  <div className="flex items-center space-x-6 text-sm text-gray-500">
                     <div className="flex items-center">
-                      <User className="h-4 w-4 mr-1" />
+                      <User className="h-4 w-4 mr-2" />
                       {featuredPosts[0].author}
                     </div>
                     <div className="flex items-center">
-                      <Calendar className="h-4 w-4 mr-1" />
+                      <Calendar className="h-4 w-4 mr-2" />
                       {featuredPosts[0].date}
                     </div>
                   </div>
@@ -109,10 +138,10 @@ const BlogPage: React.FC = () => {
                     href={featuredPosts[0].url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#001C3E] font-semibold hover:underline flex items-center"
+                    className="text-[#001C3E] font-semibold hover:underline flex items-center text-lg hover:text-blue-800 transition-colors"
                   >
-                    {`Read More about ${featuredPosts[0].title}`}{' '}
-                    <ArrowRight className="ml-1 h-4 w-4" />
+                    Read Article
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </div>
               </div>

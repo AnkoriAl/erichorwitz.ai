@@ -86,6 +86,17 @@ const QuotesPage: React.FC = () => {
 
   return (
     <div>
+      <Head>
+        <title>Inspirational Quotes & Wisdom | Eric Horwitz Coaching Philosophy | GEM Coaching</title>
+        <meta
+          name="description"
+          content="Discover inspirational quotes and wisdom from executive coach Eric Horwitz. Explore quotes on leadership, personal growth, career development, and transformation from 20+ years of coaching experience."
+        />
+        <meta
+          name="keywords"
+          content="Eric Horwitz quotes, inspirational coaching quotes, leadership wisdom, personal growth quotes, career development quotes, executive coaching philosophy, motivational quotes, GEM coaching wisdom"
+        />
+      </Head>
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

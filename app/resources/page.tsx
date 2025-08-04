@@ -1,5 +1,6 @@
 import React from 'react';
 import { Play, Download, BookOpen, Mic, Video, FileText } from 'lucide-react';
+import Head from 'next/head';
 
 const featuredVideos = [
 	{
@@ -88,6 +89,17 @@ const ResourcesPage: React.FC = () => {
 
 	return (
 		<div>
+			<Head>
+				<title>Executive Coaching Resources | Videos, Books, Articles | Eric Horwitz | GEM Coaching</title>
+				<meta
+					name="description"
+					content="Explore executive coaching resources by Eric Horwitz: featured videos, book recommendations, press articles, and growth mindset tools. Access TEDx talks, leadership insights, and professional development materials."
+				/>
+				<meta
+					name="keywords"
+					content="executive coaching resources, Eric Horwitz videos, leadership development books, coaching articles, TEDx talks, professional development, growth mindset resources, GEM coaching materials, career development tools"
+				/>
+			</Head>
 			{/* Hero */}
 			<section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">
 				<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

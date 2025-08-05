@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 const TestimonialsPage: React.FC = () => {
   const successStories = [
     {
-      name: "Angela M.",
-      title: "SVP Finance",
-      before: "Overworked, unclear next step",
-      after: "Promoted to CFO & reclaimed work-life balance",
-      quote: "Eric helped me see possibilities I couldn't imagine and held me accountable until they were real.",
+      name: "Sabrina Guttman",
+      title: "Founder, Sagesse Communications",
+      before: "Struggling with self-criticism about work habits",
+      after: "Built a profitable business working with clients she enjoys",
+      quote: "Eric has a way of turning self-criticism into a strength, helping me build a plan that works with my natural tendencies instead of against them.",
       image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
     },
     {
@@ -35,11 +35,11 @@ const TestimonialsPage: React.FC = () => {
       image: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg"
     },
     {
-      name: "Nadia K.",
-      title: "Career Switcher",
-      before: "Teacher",
-      after: "UX designer at IDEO",
-      quote: "He guided me through the unknown with humor and confidence.",
+      name: "Angela M.",
+      title: "SVP Finance",
+      before: "Overworked, unclear next step",
+      after: "Promoted to CFO & reclaimed work-life balance",
+      quote: "Eric helped me see possibilities I couldn't imagine and held me accountable until they were real.",
       image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg"
     }
   ];
@@ -51,9 +51,9 @@ const TestimonialsPage: React.FC = () => {
       quote: "Eric's coaching transformed not just my career trajectory, but my entire approach to leadership. The results speak for themselves."
     },
     {
-      name: "Sarah L.",
-      title: "Startup Founder",
-      quote: "Working with Eric was the turning point for my company. His frameworks helped me scale from chaos to clarity."
+      name: "Sabrina Guttman",
+      title: "Founder, Sagesse Communications",
+      quote: "In one year, with Eric's coaching, I've built a business I'm proud of, working with clients I enjoy, and actually making money."
     },
     {
       name: "David K.",

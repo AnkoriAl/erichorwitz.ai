@@ -41,16 +41,16 @@ const Home: React.FC = () => {
   };
   const testimonials = [
     {
+      text: "Eric helped me see that 'lazy' isn't a flaw – it's a strategy to work smarter, not longer, and make room for rest without guilt.",
+      author: "Sabrina Guttman, Founder, Sagesse Communications"
+    },
+    {
       text: "Eric helped me see possibilities I couldn't imagine and held me accountable until they were real.",
       author: "Angela M., SVP Finance"
     },
     {
-      text: "Eric's blend of strategic rigor and human insight turned our program around.",
-      author: "Dr. Tom H., NYC DOE"
-    },
-    {
-      text: "The coaching framework forced me to stop hiding from my own potential.",
-      author: "Sanjay P., Founder"
+      text: "I felt seen when Eric reframed my laziness as a motivator to work hard and create space for the things I love.",
+      author: "Sabrina Guttman, Founder, Sagesse Communications"
     }
   ];
 

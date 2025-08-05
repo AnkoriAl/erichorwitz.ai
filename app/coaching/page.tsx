@@ -1,9 +1,14 @@
-import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Users, Building, Lightbulb, Target, BarChart, Sparkles } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import FloatingCard from '../components/FloatingCard';
-import Head from 'next/head';
+
+export const metadata: Metadata = {
+  title: 'Executive Coaching, Growth Mindset & Career Change Programs | Eric Horwitz | GEM Coaching',
+  description: 'Unlock your potential with executive coaching, growth mindset programs, career change support, leadership development, and team workshops by Eric Horwitz. Explore the Thriver Program, Treasure Chest, and proven frameworks for career growth, goal setting, and professional identity counseling.',
+  keywords: 'executive coaching, growth mindset, career change in 40s, leadership development, career growth plan template, goal setting at work, professional identity counseling, GEM Coaching, Eric Horwitz, Thriver Program, Treasure Chest, team development workshops, corporate leadership coaching, personal development, work goals to set, midlife career crisis, coaching programs, leadership development programs, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, NYC executive coach',
+};
 
 const CoachingPage: React.FC = () => {
   const services = [
@@ -58,18 +63,6 @@ const CoachingPage: React.FC = () => {
 
   return (
     <>
-      <Head>
-        <title>Executive Coaching, Growth Mindset & Career Change Programs | Eric Horwitz | GEM Coaching</title>
-        <meta
-          name="description"
-          content="Unlock your potential with executive coaching, growth mindset programs, career change support, leadership development, and team workshops by Eric Horwitz. Explore the Thriver Program, Treasure Chest, and proven frameworks for career growth, goal setting, and professional identity counseling."
-        />
-        <meta
-          name="keywords"
-          content="executive coaching, growth mindset, career change in 40s, leadership development, career growth plan template, goal setting at work, professional identity counseling, GEM Coaching, Eric Horwitz, Thriver Program, Treasure Chest, team development workshops, corporate leadership coaching, personal development, work goals to set, midlife career crisis, coaching programs, leadership development programs, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, NYC executive coach"
-        />
-        {/* Google Analytics */}
-      </Head>
       <section className="bg-gradient-to-br from-[#001C3E] via-blue-900 to-indigo-900 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-white/5" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">

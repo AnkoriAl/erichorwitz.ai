@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import ClientLayout from './components/ClientLayout'
 import { GoogleAnalytics } from './components/GoogleAnalytics'
-import AnalyticsDebugger from './components/AnalyticsDebugger'
 import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -42,7 +41,6 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <GoogleAnalytics />
-        <AnalyticsDebugger />
         <ClientLayout>
           {children}
         </ClientLayout>

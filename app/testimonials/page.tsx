@@ -1,7 +1,12 @@
-import React from 'react';
-import Head from 'next/head';
+import type { Metadata } from 'next';
 import { Star, TrendingUp, Users, Award } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Client Success Stories & Testimonials | Eric Horwitz Executive Coaching | GEM Coaching',
+  description: 'Read inspiring client success stories and testimonials from Eric Horwitz\'s executive coaching. See real transformations from career changes to leadership breakthroughs with GEM Coaching programs.',
+  keywords: 'Eric Horwitz testimonials, executive coaching success stories, client transformations, GEM coaching reviews, leadership development results, career change success, coaching testimonials NYC',
+};
 
 const TestimonialsPage: React.FC = () => {
   const successStories = [
@@ -64,17 +69,6 @@ const TestimonialsPage: React.FC = () => {
 
   return (
     <div>
-      <Head>
-        <title>Client Success Stories & Testimonials | Eric Horwitz Executive Coaching | GEM Coaching</title>
-        <meta
-          name="description"
-          content="Read inspiring client success stories and testimonials from Eric Horwitz's executive coaching. See real transformations from career changes to leadership breakthroughs with GEM Coaching programs."
-        />
-        <meta
-          name="keywords"
-          content="Eric Horwitz testimonials, executive coaching success stories, client transformations, GEM coaching reviews, leadership development results, career change success, coaching testimonials NYC"
-        />
-      </Head>
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

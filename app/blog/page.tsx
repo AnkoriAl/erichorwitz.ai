@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Metadata } from 'next';
 import { Calendar, User, ArrowRight, BookOpen } from 'lucide-react';
 

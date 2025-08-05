@@ -33,23 +33,15 @@ export function GoogleAnalytics() {
           page_path: url,
           send_page_view: true // Explicitly send page view
         });
-
-        console.log('GA: Page view tracked successfully', { 
-          title: document.title, 
-          path: url, 
-          location: window.location.href,
-          timestamp: new Date().toISOString()
-        });
         
         return true; // Success
       } else {
         retryCountRef.current++;
         
         if (retryCountRef.current < maxRetries) {
-          console.log(`GA: Waiting for gtag to load... (attempt ${retryCountRef.current}/${maxRetries})`);
           setTimeout(trackPageView, 100);
         } else {
-          console.error('GA: Failed to load gtag after maximum retries');
+          // Failed to load after maximum retries
         }
         
         return false; // Failed
@@ -75,10 +67,6 @@ export const trackEvent = (action: string, category: string, label?: string, val
       event_label: label,
       value: value,
     });
-    
-    console.log('GA: Event tracked', { action, category, label, value });
-  } else {
-    console.warn('GA: gtag not available for event tracking', { action, category, label, value });
   }
 };
 
@@ -91,9 +79,5 @@ export const trackPageView = (path: string, title?: string) => {
       page_location: window.location.href,
       send_page_view: true
     });
-    
-    console.log('GA: Manual page view tracked', { path, title: title || document.title });
-  } else {
-    console.warn('GA: gtag not available for manual page view tracking', { path, title });
   }
 };

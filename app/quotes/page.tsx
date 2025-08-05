@@ -1,9 +1,8 @@
 
-
 'use client'
-import Head from 'next/head';
 
-import React, { useState } from 'react';
+import Head from 'next/head';
+import { useState } from 'react';
 import { Copy, Share2, Quote } from 'lucide-react';
 
 const QuotesPage: React.FC = () => {
@@ -64,7 +63,7 @@ const QuotesPage: React.FC = () => {
       setCopiedQuote(quote);
       setTimeout(() => setCopiedQuote(null), 2000);
     } catch (err) {
-      console.error('Failed to copy quote:', err);
+      // Silent error handling - copy failed
     }
   };
 
@@ -77,7 +76,7 @@ const QuotesPage: React.FC = () => {
           url: window.location.href,
         });
       } catch (err) {
-        console.error('Error sharing:', err);
+        // Silent error handling - sharing failed
       }
     } else {
       copyToClipboard(quote);

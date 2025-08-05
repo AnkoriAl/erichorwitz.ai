@@ -1,22 +1,16 @@
-import React from 'react';
+import type { Metadata } from 'next';
 import { Award, Users, Gem } from 'lucide-react';
 import Link from 'next/link';
-import Head from 'next/head';
+
+export const metadata: Metadata = {
+  title: 'GEM Coaching Programs | Treasure Chest, Renaissance Academy & Thriver Program | Eric Horwitz',
+  description: 'Explore GEM Coaching\'s signature programs: The Treasure Chest community, Renaissance Academy certification, and Thriver Program. Transform your potential through community, certification, and deep accountability with Eric Horwitz.',
+  keywords: 'GEM coaching programs, Treasure Chest community, Renaissance Academy, Thriver Program, Eric Horwitz programs, group coaching, coaching certification, professional development, leadership programs, career transformation, coaching community',
+};
 
 const ProgramsPage: React.FC = () => {
   return (
     <div>
-      <Head>
-        <title>GEM Coaching Programs | Treasure Chest, Renaissance Academy & Thriver Program | Eric Horwitz</title>
-        <meta
-          name="description"
-          content="Explore GEM Coaching's signature programs: The Treasure Chest community, Renaissance Academy certification, and Thriver Program. Transform your potential through community, certification, and deep accountability with Eric Horwitz."
-        />
-        <meta
-          name="keywords"
-          content="GEM coaching programs, Treasure Chest community, Renaissance Academy, Thriver Program, Eric Horwitz programs, group coaching, coaching certification, professional development, leadership programs, career transformation, coaching community"
-        />
-      </Head>
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

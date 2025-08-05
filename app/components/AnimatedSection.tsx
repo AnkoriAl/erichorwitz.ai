@@ -1,10 +1,10 @@
 'use client'
 
-import React, { useRef } from 'react';
+import { useRef, ReactNode } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 interface AnimatedSectionProps {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
   delay?: number;
   direction?: 'up' | 'down' | 'left' | 'right' | 'fade';

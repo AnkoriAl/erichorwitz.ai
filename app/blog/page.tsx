@@ -1,6 +1,21 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Calendar, User, ArrowRight, BookOpen } from 'lucide-react';
-import Head from 'next/head';
+
+export const metadata: Metadata = {
+  title: 'Executive Coaching Blog | Growth Mindset, Career Change, Leadership Development & GEM Insights',
+  description: 'Explore executive coaching articles, growth mindset tips, career change strategies, leadership development, goal setting at work, and professional identity counseling from Eric Horwitz and the GEM coaching community. Find career growth plan templates, midlife career change advice, and more.',
+  keywords: 'executive coaching blog, growth mindset, career change in 40s, leadership development, career growth plan template, goal setting at work, professional identity counseling, GEM coaching, Eric Horwitz, career transitions, personal growth, career development, work goals to set, midlife career crisis, coaching programs, leadership development programs, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, coaching articles, NYC executive coach',
+  openGraph: {
+    type: 'website',
+    title: 'Executive Coaching Blog | GEM Insights',
+    description: 'Growth mindset tips, career change strategies, and leadership development insights.',
+    url: 'https://www.erichorwitz.ai/blog',
+  },
+  alternates: {
+    canonical: 'https://www.erichorwitz.ai/blog',
+  },
+};
 
 // Helper to generate blog URLs
 const getBlogUrl = (title: string) =>
@@ -78,18 +93,6 @@ const BlogPage: React.FC = () => {
 
   return (
     <div>
-      <Head>
-        <title>Executive Coaching Blog | Growth Mindset, Career Change, Leadership Development & GEM Insights</title>
-        <meta
-          name="description"
-          content="Explore executive coaching articles, growth mindset tips, career change strategies, leadership development, goal setting at work, and professional identity counseling from Eric Horwitz and the GEM coaching community. Find career growth plan templates, midlife career change advice, and more."
-        />
-        <meta
-          name="keywords"
-          content="executive coaching blog, growth mindset, career change in 40s, leadership development, career growth plan template, goal setting at work, professional identity counseling, GEM coaching, Eric Horwitz, career transitions, personal growth, career development, work goals to set, midlife career crisis, coaching programs, leadership development programs, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, coaching articles, NYC executive coach"
-        />
-        {/* Google Analytics */}
-      </Head>
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

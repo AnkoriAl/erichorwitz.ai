@@ -1,9 +1,25 @@
 import React from 'react';
-import Head from 'next/head';
+import type { Metadata } from 'next';
+import Script from 'next/script';
 import Link from 'next/link';
 import { Quote, Heart, Users, Lightbulb, Target, Sparkles, Award, BadgeCheck, Globe, Briefcase, BookOpen, TrendingUp } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import FloatingCard from '../components/FloatingCard';
+
+export const metadata: Metadata = {
+  title: 'About Eric Horwitz | NYC Executive Coach for Career Transitions & Leadership',
+  description: 'Meet Eric Horwitz, founder of GEM Coaching and leader in career transformation, executive development, and burnout recovery. Discover his coaching philosophy, client success, and signature frameworks.',
+  keywords: 'Eric Horwitz, executive coach, career transitions, leadership development, burnout recovery, GEM Coaching, New York City coaching',
+  openGraph: {
+    type: 'profile',
+    title: 'About Eric Horwitz | GEM Coaching',
+    description: 'Learn about Eric\'s story, credentials, and programs.',
+    url: 'https://www.erichorwitz.ai/about',
+  },
+  alternates: {
+    canonical: 'https://www.erichorwitz.ai/about',
+  },
+};
 
 const AboutPage: React.FC = () => {
   const keystoneQuotes = [
@@ -66,36 +82,28 @@ const AboutPage: React.FC = () => {
 
   return (
     <div>
-      <Head>
-        <title>About Eric Horwitz | NYC Executive Coach for Career Transitions & Leadership</title>
-        <meta name="description" content="Meet Eric Horwitz, founder of GEM Coaching and leader in career transformation, executive development, and burnout recovery. Discover his coaching philosophy, client success, and signature frameworks." />
-        <meta name="keywords" content="Eric Horwitz, executive coach, career transitions, leadership development, burnout recovery, GEM Coaching, New York City coaching" />
-        <meta property="og:type" content="profile" />
-        <meta property="og:title" content="About Eric Horwitz | GEM Coaching" />
-        <meta property="og:description" content="Learn about Eric's story, credentials, and programs." />
-        <link rel="icon" href="/favicon-gem.ico" type="https://static.wixstatic.com/media/a372b4_34d13eb76f1d466992a52772a58bc5e3~mv2.png/v1/fill/w_1200,h_800,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/GEM%20LOGO.png" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Eric Horwitz",
-              "jobTitle": "Executive Coach",
-              "url": "https://www.erichorwitz.ai/about",
-              "affiliation": {
-                "@type": "Organization",
-                "name": "GEM Coaching"
-              },
-              "sameAs": [
-                "https://www.linkedin.com/in/erichorwitz",
-                "https://www.gem.coach"
-              ]
-            })
-          }}
-        />
-      </Head>
-
+      <Script
+        id="structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Eric Horwitz",
+            "jobTitle": "Executive Coach",
+            "url": "https://www.erichorwitz.ai/about",
+            "affiliation": {
+              "@type": "Organization",
+              "name": "GEM Coaching"
+            },
+            "sameAs": [
+              "https://www.linkedin.com/in/erichorwitz",
+              "https://www.gem.coach"
+            ]
+          })
+        }}
+      />
+      
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Hero Section */}
         <section className="mb-20 grid gap-12 md:grid-cols-2 items-center">

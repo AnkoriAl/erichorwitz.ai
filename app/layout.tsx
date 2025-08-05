@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import ClientLayout from './components/ClientLayout'
+import { GoogleAnalytics } from './components/GoogleAnalytics'
+import AnalyticsDebugger from './components/AnalyticsDebugger'
 import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -32,11 +34,15 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-GSW578WSLS');
+            gtag('config', 'G-GSW578WSLS', {
+              send_page_view: false
+            });
           `}
         </Script>
       </head>
       <body className={inter.className}>
+        <GoogleAnalytics />
+        <AnalyticsDebugger />
         <ClientLayout>
           {children}
         </ClientLayout>

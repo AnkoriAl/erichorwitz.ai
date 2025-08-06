@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import AnimatedSection from './components/AnimatedSection';
 import FloatingCard from './components/FloatingCard';
+import StructuredData from './components/StructuredData';
 
 const Home: React.FC = () => {
   const [firstName, setFirstName] = useState('');
@@ -75,6 +76,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
+      <StructuredData />
       <Head>
         <title>Executive Coach for Career Change, Growth Mindset & Leadership | Eric Horwitz</title>
         <meta name="description" content="Transform your career and leadership potential with NYC executive coach Eric Horwitz. Specializing in career transitions, growth mindset development, and leadership coaching for professionals seeking meaningful change and breakthrough results." />

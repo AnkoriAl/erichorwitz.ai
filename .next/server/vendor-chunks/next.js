@@ -1872,6 +1872,16 @@ eval("module.exports = __webpack_require__(/*! ./dist/client/components/navigati
 
 /***/ }),
 
+/***/ "(ssr)/./node_modules/next/script.js":
+/*!*************************************!*\
+  !*** ./node_modules/next/script.js ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__(/*! ./dist/client/script */ \"(ssr)/./node_modules/next/dist/client/script.js\");\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9zY3JpcHQuanMiLCJtYXBwaW5ncyI6IkFBQUFBLG1IQUF5QiIsInNvdXJjZXMiOlsid2VicGFjazovL2VyaWMtaG9yd2l0ei13ZWJzaXRlLy4vbm9kZV9tb2R1bGVzL25leHQvc2NyaXB0LmpzP2U0YmEiXSwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKCcuL2Rpc3QvY2xpZW50L3NjcmlwdCcpXG4iXSwibmFtZXMiOlsibW9kdWxlIiwiZXhwb3J0cyIsInJlcXVpcmUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/script.js\n");
+
+/***/ }),
+
 /***/ "(rsc)/./node_modules/next/dist/build/output/log.js":
 /*!****************************************************!*\
   !*** ./node_modules/next/dist/build/output/log.js ***!

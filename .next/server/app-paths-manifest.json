@@ -1,1 +1,16 @@
-{}
+{
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/_not-found": "app/_not-found.js",
+  "/contact/page": "app/contact/page.js",
+  "/coaching/page": "app/coaching/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
+  "/quotes/page": "app/quotes/page.js",
+  "/resources/page": "app/resources/page.js",
+  "/programs/page": "app/programs/page.js",
+  "/testimonials/page": "app/testimonials/page.js",
+  "/apple-icon/route": "app/apple-icon/route.js",
+  "/icon/route": "app/icon/route.js"
+}

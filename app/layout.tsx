@@ -18,10 +18,11 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
-  },
-  other: {
-    'robots': 'index,follow',
   },
   verification: {
     google: 'pIG0WcuE5z1QqEyjFc8wZjMeoYKJ5xmOPGAwDRALy-Q',

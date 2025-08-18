@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Users, Building, Lightbulb, Target, BarChart, Sparkles } from 'lucide-react';
-import AnimatedSection from '../components/AnimatedSection';
-import FloatingCard from '../components/FloatingCard';
-import Breadcrumb from '../components/Breadcrumb';
+import ServerSection from '../components/ServerSection';
+import ServerCard from '../components/ServerCard';
+import ServerBreadcrumb from '../components/ServerBreadcrumb';
 
 export const metadata: Metadata = {
   title: 'Executive Coaching, Growth Mindset & Career Change Programs | Eric Horwitz | GEM Coaching',
@@ -93,26 +93,26 @@ const CoachingPage: React.FC = () => {
       </section>
 
       {/* Services Overview */}
-      <AnimatedSection className="py-20">
+      <ServerSection className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumb items={[{ name: 'Coaching', href: '/coaching' }]} />
+          <ServerBreadcrumb items={[{ name: 'Coaching', href: '/coaching' }]} />
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Coaching Services: Executive, Career Change & Growth Mindset</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <FloatingCard key={index} className="p-8 group" delay={index * 0.2}>
+                <ServerCard key={index} className="p-8 group">
                   <div className="bg-gradient-to-r from-[#001C3E] to-blue-800 text-white p-3 rounded-xl w-fit mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Icon className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
                   <p className="text-gray-600">{service.description}</p>
-                </FloatingCard>
+                </ServerCard>
               );
             })}
           </div>
         </div>
-      </AnimatedSection>
+      </ServerSection>
 
       {/* Methodology */}
       <section className="py-16 bg-gray-50">
@@ -216,7 +216,7 @@ const CoachingPage: React.FC = () => {
       </section>
 
       {/* CTA */}
-      <AnimatedSection className="py-20 bg-gradient-to-r from-[#001C3E] to-blue-900 text-white">
+      <ServerSection className="py-20 bg-gradient-to-r from-[#001C3E] to-blue-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-xl text-blue-100 mb-8">
@@ -231,7 +231,7 @@ const CoachingPage: React.FC = () => {
             Get in Touch
           </a>
         </div>
-      </AnimatedSection>
+      </ServerSection>
     </>
   );
 };

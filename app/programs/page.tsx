@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Award, Users, Gem } from 'lucide-react';
 import Link from 'next/link';
 import Script from 'next/script';
-import Breadcrumb from '../components/Breadcrumb';
+import ServerBreadcrumb from '../components/ServerBreadcrumb';
 
 export const metadata: Metadata = {
   title: 'GEM Coaching Programs | Treasure Chest, Renaissance Academy & Thriver Program | Eric Horwitz',
@@ -95,6 +95,7 @@ const ProgramsPage: React.FC = () => {
       <Script
         id="course-schema"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(courseSchema)
         }}
@@ -112,7 +113,7 @@ const ProgramsPage: React.FC = () => {
       {/* Programs */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-          <Breadcrumb items={[{ name: 'Programs', href: '/programs' }]} />
+          <ServerBreadcrumb items={[{ name: 'Programs', href: '/programs' }]} />
           
           {/* Treasure Chest */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

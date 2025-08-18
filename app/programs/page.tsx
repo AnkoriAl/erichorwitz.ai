@@ -51,7 +51,8 @@ const ProgramsPage: React.FC = () => {
           "@type": "Offer",
           "url": "https://gem.coach/treasure-chest",
           "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
+          "availability": "https://schema.org/InStock",
+          "category": "Community Program"
         },
         "hasCourseInstance": {
           "@type": "CourseInstance",
@@ -59,7 +60,8 @@ const ProgramsPage: React.FC = () => {
           "instructor": {
             "@type": "Person",
             "name": "Eric Horwitz"
-          }
+          },
+          "courseWorkload": "PT2H"
         }
       },
       {
@@ -85,7 +87,8 @@ const ProgramsPage: React.FC = () => {
           "@type": "Offer",
           "url": "https://gem.coach/renaissance-academy",
           "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
+          "availability": "https://schema.org/InStock",
+          "category": "Certification Program"
         },
         "hasCourseInstance": {
           "@type": "CourseInstance",
@@ -94,10 +97,7 @@ const ProgramsPage: React.FC = () => {
             "@type": "Person",
             "name": "Eric Horwitz"
           },
-          "courseSchedule": {
-            "@type": "Schedule",
-            "duration": "P6M"
-          }
+          "courseWorkload": "PT10H"
         }
       },
       {
@@ -122,7 +122,8 @@ const ProgramsPage: React.FC = () => {
           "@type": "Offer",
           "url": "https://gem.coach/thriver",
           "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
+          "availability": "https://schema.org/InStock",
+          "category": "Intensive Program"
         },
         "hasCourseInstance": {
           "@type": "CourseInstance",
@@ -131,10 +132,7 @@ const ProgramsPage: React.FC = () => {
             "@type": "Person",
             "name": "Eric Horwitz"
           },
-          "courseSchedule": {
-            "@type": "Schedule",
-            "duration": "P12W"
-          }
+          "courseWorkload": "PT90M"
         }
       }
     ]

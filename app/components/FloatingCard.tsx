@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion';
-import { ReactNode } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 
 interface FloatingCardProps {
   children: ReactNode;
@@ -10,6 +10,21 @@ interface FloatingCardProps {
 }
 
 const FloatingCard: React.FC<FloatingCardProps> = ({ children, className = '', delay = 0 }) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Return static content on server
+  if (!mounted) {
+    return (
+      <div className={`bg-white rounded-2xl shadow-lg ${className}`}>
+        {children}
+      </div>
+    );
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

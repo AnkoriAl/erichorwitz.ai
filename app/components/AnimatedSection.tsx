@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, ReactNode } from 'react';
+import { useRef, ReactNode, useEffect, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 interface AnimatedSectionProps {
@@ -17,7 +17,12 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
   direction = 'up' 
 }) => {
   const ref = useRef(null);
+  const [mounted, setMounted] = useState(false);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const variants = {
     hidden: {
@@ -36,6 +41,11 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
       },
     },
   };
+
+  // Return static content on server
+  if (!mounted) {
+    return <div className={className}>{children}</div>;
+  }
 
   return (
     <motion.div

@@ -15,6 +15,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  other: {
+    'robots': 'index,follow',
   },
   verification: {
     google: 'pIG0WcuE5z1QqEyjFc8wZjMeoYKJ5xmOPGAwDRALy-Q',

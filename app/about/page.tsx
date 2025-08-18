@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import Link from 'next/link';
 import { Quote, Heart, Users, Lightbulb, Target, Sparkles, Award, BadgeCheck, Globe, Briefcase, BookOpen, TrendingUp } from 'lucide-react';
-import AnimatedSection from '../components/AnimatedSection';
-import FloatingCard from '../components/FloatingCard';
-import Breadcrumb from '../components/Breadcrumb';
+import ServerSection from '../components/ServerSection';
+import ServerCard from '../components/ServerCard';
+import ServerBreadcrumb from '../components/ServerBreadcrumb';
 
 export const metadata: Metadata = {
   title: 'About Eric Horwitz | NYC Executive Coach for Career Transitions & Leadership',
@@ -109,7 +109,7 @@ const AboutPage: React.FC = () => {
       />
       
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <Breadcrumb items={[{ name: 'About', href: '/about' }]} />
+        <ServerBreadcrumb items={[{ name: 'About', href: '/about' }]} />
         {/* Hero Section */}
         <section className="mb-20 grid gap-12 md:grid-cols-2 items-center">
           <div className="flex justify-center md:justify-start">
@@ -124,22 +124,22 @@ const AboutPage: React.FC = () => {
             <h1 className="text-5xl font-bold text-[#001C3E] mb-6 leading-tight">About Eric Horwitz</h1>
             <p className="text-xl text-gray-700 mb-8">Executive Coach specializing in career transitions, leadership development, and burnout recovery</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
-              <FloatingCard className="flex gap-4 p-6 items-center group">
+              <ServerCard className="flex gap-4 p-6 items-center group">
                 <Users className="h-8 w-8 text-[#001C3E] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                 <p className="text-gray-700 leading-relaxed">Two decades empowering executives and change agents worldwide</p>
-              </FloatingCard>
-              <FloatingCard className="flex gap-4 p-6 items-center group">
+              </ServerCard>
+              <ServerCard className="flex gap-4 p-6 items-center group">
                 <Sparkles className="h-8 w-8 text-[#001C3E] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                 <p className="text-gray-700 leading-relaxed">Expert in midlife career transitions and leadership growth</p>
-              </FloatingCard>
-              <FloatingCard className="flex gap-4 p-6 items-center group">
+              </ServerCard>
+              <ServerCard className="flex gap-4 p-6 items-center group">
                 <Briefcase className="h-8 w-8 text-[#001C3E] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                 <p className="text-gray-700 leading-relaxed">Trusted advisor to leaders at Credit Suisse, IDEO, Google, and NYC DOE</p>
-              </FloatingCard>
-              <FloatingCard className="flex gap-4 p-6 items-center group">
+              </ServerCard>
+              <ServerCard className="flex gap-4 p-6 items-center group">
                 <Award className="h-8 w-8 text-[#001C3E] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                 <p className="text-gray-700 leading-relaxed">Chair of Columbia University Career Coaching Network (400k+ alumni)</p>
-              </FloatingCard>
+              </ServerCard>
             </div>
           </div>
         </section>
@@ -151,10 +151,10 @@ const AboutPage: React.FC = () => {
             {credentials.map((item, index) => {
               const Icon = item.icon;
               return (
-                <FloatingCard key={index} className="flex gap-4 p-6 items-start group" delay={index * 0.1}>
+                <ServerCard key={index} className="flex gap-4 p-6 items-start group">
                   <Icon className="h-8 w-8 text-[#001C3E] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                   <p className="text-gray-700 leading-relaxed">{item.text}</p>
-                </FloatingCard>
+                </ServerCard>
               );
             })}
           </div>
@@ -178,7 +178,7 @@ const AboutPage: React.FC = () => {
             {programs.map((prog, index) => {
               const Icon = prog.icon;
               return (
-                <FloatingCard key={index} className="p-6 text-center group" delay={index * 0.1}>
+                <ServerCard key={index} className="p-6 text-center group">
                   <div className="bg-gradient-to-r from-[#001C3E] to-blue-800 text-white p-4 rounded-xl w-fit mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Icon className="h-8 w-8" />
                   </div>
@@ -186,7 +186,7 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-xl font-bold text-gray-900 mb-2">{prog.title}</h3>
                   </Link>
                   <p className="text-gray-700">{prog.description}</p>
-                </FloatingCard>
+                </ServerCard>
               );
             })}
           </div>
@@ -194,7 +194,7 @@ const AboutPage: React.FC = () => {
       </main>
 
       {/* Detailed Biography */}
-      <AnimatedSection className="py-20 bg-gray-50">
+      <ServerSection className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Eric's Journey</h2>
           <div className="flex flex-col md:flex-row items-center gap-12 bg-white rounded-3xl shadow-2xl p-8">
@@ -245,69 +245,69 @@ const AboutPage: React.FC = () => {
             </div>
           </div>
         </div>
-      </AnimatedSection>
+      </ServerSection>
 
       {/* Keystone Quotes */}
-      <AnimatedSection className="py-20">
+      <ServerSection className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Guiding Principles</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {keystoneQuotes.map((quote, index) => (
-              <FloatingCard key={index} className="p-8" delay={index * 0.2}>
+              <ServerCard key={index} className="p-8">
                 <Quote className="h-8 w-8 text-[#001C3E] mb-4 hover:scale-110 transition-transform duration-300" />
                 <blockquote className="text-lg text-gray-800 italic font-light leading-relaxed">
                   "{quote}"
                 </blockquote>
-              </FloatingCard>
+              </ServerCard>
             ))}
           </div>
         </div>
-      </AnimatedSection>
+      </ServerSection>
 
       {/* Values & Vision */}
-      <AnimatedSection className="py-20 bg-gray-50">
+      <ServerSection className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <FloatingCard key={index} className="text-center p-6 group" delay={index * 0.1}>
+                <ServerCard key={index} className="text-center p-6 group">
                   <div className="bg-gradient-to-r from-[#001C3E] to-blue-800 text-white p-4 rounded-xl w-fit mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Icon className="h-8 w-8" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{value.title}</h3>
                   <p className="text-gray-600">{value.description}</p>
-                </FloatingCard>
+                </ServerCard>
               );
             })}
           </div>
         </div>
-      </AnimatedSection>
+      </ServerSection>
 
       {/* How It Works */}
-      <AnimatedSection className="py-20">
+      <ServerSection className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">How Executive Coaching Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <FloatingCard className="p-8">
+            <ServerCard className="p-8">
               <h3 className="text-xl font-bold text-[#001C3E] mb-4">1. Discovery & Assessment</h3>
               <p className="text-gray-700">We begin with a comprehensive assessment of your goals, challenges, and leadership style to ensure every engagement is tailored to your unique needs.</p>
-            </FloatingCard>
-            <FloatingCard className="p-8">
+            </ServerCard>
+            <ServerCard className="p-8">
               <h3 className="text-xl font-bold text-[#001C3E] mb-4">2. Strategic Roadmap</h3>
               <p className="text-gray-700">Together, we create a clear, actionable plan using proven frameworks. Milestones and metrics are defined for measurable progress.</p>
-            </FloatingCard>
-            <FloatingCard className="p-8">
+            </ServerCard>
+            <ServerCard className="p-8">
               <h3 className="text-xl font-bold text-[#001C3E] mb-4">3. Ongoing Support & Results</h3>
               <p className="text-gray-700">Through regular sessions, feedback, and accountability, you'll develop new skills and achieve sustainable transformation.</p>
-            </FloatingCard>
+            </ServerCard>
           </div>
         </div>
-      </AnimatedSection>
+      </ServerSection>
 
       {/* CTA */}
-      <AnimatedSection className="py-20 bg-gradient-to-r from-[#001C3E] to-blue-900 text-white">
+      <ServerSection className="py-20 bg-gradient-to-r from-[#001C3E] to-blue-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Transform Your Leadership?</h2>
           <p className="text-xl text-blue-100 mb-8">
@@ -320,7 +320,7 @@ const AboutPage: React.FC = () => {
             Explore Coaching Options
           </Link>
         </div>
-      </AnimatedSection>
+      </ServerSection>
     </div>
   );
 };

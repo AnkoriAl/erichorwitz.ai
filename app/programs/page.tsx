@@ -46,7 +46,21 @@ const ProgramsPage: React.FC = () => {
         "courseMode": "online",
         "educationalLevel": "intermediate",
         "teaches": ["Self-improvement", "Personal Development", "Group Coaching"],
-        "url": "https://gem.coach/treasure-chest"
+        "url": "https://gem.coach/treasure-chest",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://gem.coach/treasure-chest",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "hasCourseInstance": {
+          "@type": "CourseInstance",
+          "courseMode": "online",
+          "instructor": {
+            "@type": "Person",
+            "name": "Eric Horwitz"
+          }
+        }
       },
       {
         "@type": "Course",
@@ -66,7 +80,25 @@ const ProgramsPage: React.FC = () => {
         "timeRequired": "P6M",
         "teaches": ["Coaching Fundamentals", "Neuroscience of Change", "Business of Coaching"],
         "url": "https://gem.coach/renaissance-academy",
-        "educationalCredentialAwarded": "GEM-Certified Coach"
+        "educationalCredentialAwarded": "GEM-Certified Coach",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://gem.coach/renaissance-academy",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "hasCourseInstance": {
+          "@type": "CourseInstance",
+          "courseMode": "online",
+          "instructor": {
+            "@type": "Person",
+            "name": "Eric Horwitz"
+          },
+          "courseSchedule": {
+            "@type": "Schedule",
+            "duration": "P6M"
+          }
+        }
       },
       {
         "@type": "Course",
@@ -85,7 +117,25 @@ const ProgramsPage: React.FC = () => {
         "educationalLevel": "advanced",
         "timeRequired": "P12W",
         "teaches": ["Goal Setting", "Accountability", "Leadership Development"],
-        "url": "https://gem.coach/thriver"
+        "url": "https://gem.coach/thriver",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://gem.coach/thriver",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "hasCourseInstance": {
+          "@type": "CourseInstance",
+          "courseMode": "online",
+          "instructor": {
+            "@type": "Person",
+            "name": "Eric Horwitz"
+          },
+          "courseSchedule": {
+            "@type": "Schedule",
+            "duration": "P12W"
+          }
+        }
       }
     ]
   };

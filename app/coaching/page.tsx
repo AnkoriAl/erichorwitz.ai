@@ -3,11 +3,24 @@ import Link from 'next/link';
 import { Users, Building, Lightbulb, Target, BarChart, Sparkles } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import FloatingCard from '../components/FloatingCard';
+import Breadcrumb from '../components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Executive Coaching, Growth Mindset & Career Change Programs | Eric Horwitz | GEM Coaching',
   description: 'Unlock your potential with executive coaching, growth mindset programs, career change support, leadership development, and team workshops by Eric Horwitz. Explore the Thriver Program, Treasure Chest, and proven frameworks for career growth, goal setting, and professional identity counseling.',
   keywords: 'executive coaching, growth mindset, career change in 40s, leadership development, career growth plan template, goal setting at work, professional identity counseling, GEM Coaching, Eric Horwitz, Thriver Program, Treasure Chest, team development workshops, corporate leadership coaching, personal development, work goals to set, midlife career crisis, coaching programs, leadership development programs, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, NYC executive coach',
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Executive Coaching & Career Change Programs | Eric Horwitz',
+    description: 'Transform Purpose into Performance with personalized coaching',
+    url: 'https://erichorwitz.ai/coaching',
+  },
+  alternates: {
+    canonical: 'https://erichorwitz.ai/coaching',
+  },
 };
 
 const CoachingPage: React.FC = () => {
@@ -82,6 +95,7 @@ const CoachingPage: React.FC = () => {
       {/* Services Overview */}
       <AnimatedSection className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumb items={[{ name: 'Coaching', href: '/coaching' }]} />
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Coaching Services: Executive, Career Change & Growth Mindset</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => {

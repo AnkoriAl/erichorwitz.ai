@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   title: 'Eric Horwitz • Executive Coach',
   description: 'Discover the official site of Eric Horwitz, Executive Coach. Learn how his coaching, programs, and community help leaders forge purpose and achieve lasting success.',
   keywords: 'executive coaching, life coaching, leadership development, career coaching, Eric Horwitz',
+  robots: {
+    index: true,
+    follow: true,
+  },
   verification: {
     google: 'pIG0WcuE5z1QqEyjFc8wZjMeoYKJ5xmOPGAwDRALy-Q',
   },

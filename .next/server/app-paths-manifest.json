@@ -1,4 +1,14 @@
 {
+  "/page": "app/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/coaching/page": "app/coaching/page.js",
+  "/_not-found": "app/_not-found.js",
+  "/about/page": "app/about/page.js",
+  "/blog/page": "app/blog/page.js",
   "/contact/page": "app/contact/page.js",
-  "/page": "app/page.js"
+  "/quotes/page": "app/quotes/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/resources/page": "app/resources/page.js",
+  "/testimonials/page": "app/testimonials/page.js",
+  "/programs/page": "app/programs/page.js"
 }

@@ -1,10 +1,23 @@
 import type { Metadata } from 'next';
 import { Play, Download, BookOpen, Mic, Video, FileText } from 'lucide-react';
+import Breadcrumb from '../components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Executive Coaching Resources | Videos, Books, Articles | Eric Horwitz | GEM Coaching',
   description: 'Explore executive coaching resources by Eric Horwitz: featured videos, book recommendations, press articles, and growth mindset tools. Access TEDx talks, leadership insights, and professional development materials.',
   keywords: 'executive coaching resources, Eric Horwitz videos, leadership development books, coaching articles, TEDx talks, professional development, growth mindset resources, GEM coaching materials, career development tools',
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Executive Coaching Resources | Eric Horwitz',
+    description: 'Tools, insights, and inspiration to support your growth journey',
+    url: 'https://erichorwitz.ai/resources',
+  },
+  alternates: {
+    canonical: 'https://erichorwitz.ai/resources',
+  },
 };
 
 const featuredVideos = [
@@ -110,6 +123,7 @@ const ResourcesPage: React.FC = () => {
 			{/* Press & Interviews */}
 			<section className="py-16 bg-gray-50">
 				<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+					<Breadcrumb items={[{ name: 'Resources', href: '/resources' }]} />
 					<h2 className="text-3xl font-bold text-gray-900 mb-8">
 						Press & Interviews
 					</h2>

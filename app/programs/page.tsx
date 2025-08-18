@@ -1,16 +1,104 @@
 import type { Metadata } from 'next';
 import { Award, Users, Gem } from 'lucide-react';
 import Link from 'next/link';
+import Script from 'next/script';
+import Breadcrumb from '../components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'GEM Coaching Programs | Treasure Chest, Renaissance Academy & Thriver Program | Eric Horwitz',
   description: 'Explore GEM Coaching\'s signature programs: The Treasure Chest community, Renaissance Academy certification, and Thriver Program. Transform your potential through community, certification, and deep accountability with Eric Horwitz.',
   keywords: 'GEM coaching programs, Treasure Chest community, Renaissance Academy, Thriver Program, Eric Horwitz programs, group coaching, coaching certification, professional development, leadership programs, career transformation, coaching community',
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'GEM Coaching Programs | Eric Horwitz',
+    description: 'Transform your potential through community, certification, and deep accountability programs',
+    url: 'https://erichorwitz.ai/programs',
+  },
+  alternates: {
+    canonical: 'https://erichorwitz.ai/programs',
+  },
 };
 
 const ProgramsPage: React.FC = () => {
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "GEM Coaching Programs",
+    "description": "Transform your potential through community, certification, and deep accountability programs",
+    "url": "https://erichorwitz.ai/programs",
+    "itemListElement": [
+      {
+        "@type": "Course",
+        "name": "The Treasure Chest",
+        "description": "Global virtual community founded in 2020. Monthly themed workshops, peer masterminds, and live Q&A sessions with Eric.",
+        "provider": {
+          "@type": "Organization",
+          "name": "GEM Coaching",
+          "url": "https://gem.coach"
+        },
+        "instructor": {
+          "@type": "Person",
+          "name": "Eric Horwitz"
+        },
+        "courseMode": "online",
+        "educationalLevel": "intermediate",
+        "teaches": ["Self-improvement", "Personal Development", "Group Coaching"],
+        "url": "https://gem.coach/treasure-chest"
+      },
+      {
+        "@type": "Course",
+        "name": "Renaissance Academy",
+        "description": "6-month certification covering core coaching competencies, ethics, and business-building under Eric's direct mentorship.",
+        "provider": {
+          "@type": "Organization", 
+          "name": "GEM Coaching",
+          "url": "https://gem.coach"
+        },
+        "instructor": {
+          "@type": "Person",
+          "name": "Eric Horwitz"
+        },
+        "courseMode": "online",
+        "educationalLevel": "advanced",
+        "timeRequired": "P6M",
+        "teaches": ["Coaching Fundamentals", "Neuroscience of Change", "Business of Coaching"],
+        "url": "https://gem.coach/renaissance-academy",
+        "educationalCredentialAwarded": "GEM-Certified Coach"
+      },
+      {
+        "@type": "Course",
+        "name": "Thriver Program", 
+        "description": "12-week micro-mastermind pairing 4–6 leaders with Eric for structured goal-tracking, weekly pressure tests, and progress metrics.",
+        "provider": {
+          "@type": "Organization",
+          "name": "GEM Coaching", 
+          "url": "https://gem.coach"
+        },
+        "instructor": {
+          "@type": "Person",
+          "name": "Eric Horwitz"
+        },
+        "courseMode": "online",
+        "educationalLevel": "advanced",
+        "timeRequired": "P12W",
+        "teaches": ["Goal Setting", "Accountability", "Leadership Development"],
+        "url": "https://gem.coach/thriver"
+      }
+    ]
+  };
+
   return (
     <div>
+      <Script
+        id="course-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(courseSchema)
+        }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -24,6 +112,7 @@ const ProgramsPage: React.FC = () => {
       {/* Programs */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+          <Breadcrumb items={[{ name: 'Programs', href: '/programs' }]} />
           
           {/* Treasure Chest */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

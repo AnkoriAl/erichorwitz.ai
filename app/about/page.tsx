@@ -4,11 +4,16 @@ import Link from 'next/link';
 import { Quote, Heart, Users, Lightbulb, Target, Sparkles, Award, BadgeCheck, Globe, Briefcase, BookOpen, TrendingUp } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import FloatingCard from '../components/FloatingCard';
+import Breadcrumb from '../components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'About Eric Horwitz | NYC Executive Coach for Career Transitions & Leadership',
   description: 'Meet Eric Horwitz, founder of GEM Coaching and leader in career transformation, executive development, and burnout recovery. Discover his coaching philosophy, client success, and signature frameworks.',
   keywords: 'Eric Horwitz, executive coach, career transitions, leadership development, burnout recovery, GEM Coaching, New York City coaching',
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: 'profile',
     title: 'About Eric Horwitz | GEM Coaching',
@@ -104,6 +109,7 @@ const AboutPage: React.FC = () => {
       />
       
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <Breadcrumb items={[{ name: 'About', href: '/about' }]} />
         {/* Hero Section */}
         <section className="mb-20 grid gap-12 md:grid-cols-2 items-center">
           <div className="flex justify-center md:justify-start">

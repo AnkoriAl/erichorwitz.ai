@@ -1,11 +1,25 @@
 import type { Metadata } from 'next';
 import { Star, TrendingUp, Users, Award } from 'lucide-react';
 import Link from 'next/link';
+import Script from 'next/script';
+import Breadcrumb from '../components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Client Success Stories & Testimonials | Eric Horwitz Executive Coaching | GEM Coaching',
   description: 'Read inspiring client success stories and testimonials from Eric Horwitz\'s executive coaching. See real transformations from career changes to leadership breakthroughs with GEM Coaching programs.',
   keywords: 'Eric Horwitz testimonials, executive coaching success stories, client transformations, GEM coaching reviews, leadership development results, career change success, coaching testimonials NYC',
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Client Success Stories & Testimonials | Eric Horwitz',
+    description: 'Real people, real results, real transformation through coaching',
+    url: 'https://erichorwitz.ai/testimonials',
+  },
+  alternates: {
+    canonical: 'https://erichorwitz.ai/testimonials',
+  },
 };
 
 const TestimonialsPage: React.FC = () => {
@@ -67,8 +81,66 @@ const TestimonialsPage: React.FC = () => {
     }
   ];
 
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Eric Horwitz Executive Coaching - GEM Coaching",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-917-525-0935",
+    "url": "https://erichorwitz.ai",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": successStories.length + additionalTestimonials.length
+    },
+    "review": [
+      ...successStories.map(story => ({
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": story.name
+        },
+        "reviewBody": story.quote,
+        "datePublished": "2024-01-01"
+      })),
+      ...additionalTestimonials.map(testimonial => ({
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": testimonial.name
+        },
+        "reviewBody": testimonial.quote,
+        "datePublished": "2024-01-01"
+      }))
+    ]
+  };
+
   return (
     <div>
+      <Script
+        id="review-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(reviewSchema)
+        }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -83,6 +155,7 @@ const TestimonialsPage: React.FC = () => {
       {/* Success Stories - Card Design */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumb items={[{ name: 'Testimonials', href: '/testimonials' }]} />
           <h2 className="text-3xl font-bold text-center text-[#001C3E] mb-12">Featured Success Stories</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {successStories.map((story, index) => (

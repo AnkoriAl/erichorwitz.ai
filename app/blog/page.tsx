@@ -1,10 +1,16 @@
 import type { Metadata } from 'next';
 import { Calendar, User, ArrowRight, BookOpen } from 'lucide-react';
+import Script from 'next/script';
+import Breadcrumb from '../components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Executive Coaching Blog | Growth Mindset, Career Change, Leadership Development & GEM Insights',
   description: 'Explore executive coaching articles, growth mindset tips, career change strategies, leadership development, goal setting at work, and professional identity counseling from Eric Horwitz and the GEM coaching community. Find career growth plan templates, midlife career change advice, and more.',
   keywords: 'executive coaching blog, growth mindset, career change in 40s, leadership development, career growth plan template, goal setting at work, professional identity counseling, GEM coaching, Eric Horwitz, career transitions, personal growth, career development, work goals to set, midlife career crisis, coaching programs, leadership development programs, career transition resume examples, interview training skills, growth mindset quotes, goal setting books, burnout recovery, coaching articles, NYC executive coach',
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: 'website',
     title: 'Executive Coaching Blog | GEM Insights',
@@ -90,8 +96,60 @@ const BlogPage: React.FC = () => {
     }
   ];
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Executive Coaching Blog by Eric Horwitz",
+    "description": "Growth mindset tips, career change strategies, and leadership development insights",
+    "url": "https://erichorwitz.ai/blog",
+    "author": {
+      "@type": "Person",
+      "name": "Eric Horwitz",
+      "url": "https://erichorwitz.ai/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "GEM Coaching",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://static.wixstatic.com/media/a372b4_34d13eb76f1d466992a52772a58bc5e3~mv2.png/v1/fill/w_1200,h_800,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/GEM%20LOGO.png"
+      }
+    },
+    "blogPost": featuredPosts.map(post => ({
+      "@type": "BlogPosting",
+      "headline": post.title,
+      "description": post.excerpt,
+      "url": post.url,
+      "datePublished": new Date(post.date).toISOString(),
+      "dateModified": new Date(post.date).toISOString(),
+      "author": {
+        "@type": "Person",
+        "name": post.author
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "GEM Coaching"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": post.url
+      },
+      "image": post.image ? {
+        "@type": "ImageObject",
+        "url": post.image
+      } : undefined
+    }))
+  };
+
   return (
     <div>
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema)
+        }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#001C3E] to-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -106,6 +164,7 @@ const BlogPage: React.FC = () => {
       {/* Featured Post */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumb items={[{ name: 'Blog', href: '/blog' }]} />
           <h2 className="text-3xl font-bold text-gray-900 mb-12">Featured Article: Career Growth, Leadership & Mindset</h2>
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200">
             <div className="grid grid-cols-1 lg:grid-cols-2">

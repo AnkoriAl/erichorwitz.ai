@@ -32,6 +32,33 @@ const getBlogUrl = (title: string) =>
 const BlogPage: React.FC = () => {
   const featuredPosts = [
     {
+      title: "Achieve Excellence with Executive Coaching for Leaders",
+      excerpt: "Leadership is a journey, not a destination. Discover how coaching for leadership growth acts as a trusted companion, helping you navigate challenges, uncover strengths, and transform uncertainty into action and potential into excellence.",
+      category: "Leadership Development",
+      date: "Aug 18, 2025",
+      author: "Eric Horwitz",
+      image: "https://static.wixstatic.com/media/a372b4_d02faaaa8a174d80bbf172972a552b0b~mv2.png/v1/fill/w_980,h_654,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/a372b4_d02faaaa8a174d80bbf172972a552b0b~mv2.png",
+      url: "https://www.gem.coach/post/achieve-excellence-with-executive-coaching-for-leaders"
+    },
+    {
+      title: "Empower Your Leadership Journey with Coaching",
+      excerpt: "Leadership coaching offers a unique blend of reflection, challenge, and encouragement that helps leaders unlock their potential. Discover the benefits of enhanced emotional intelligence, improved communication, and resilience building through authentic coaching partnerships.",
+      category: "Coaching Insights",
+      date: "Aug 11, 2024",
+      author: "Eric Horwitz",
+      image: "https://static.wixstatic.com/media/a372b4_edf935b61b674d7f97b3cf2087fd5365~mv2.png/v1/fill/w_980,h_654,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/a372b4_edf935b61b674d7f97b3cf2087fd5365~mv2.png",
+      url: "https://www.gem.coach/post/empower-your-leadership-journey-with-coaching"
+    },
+    {
+      title: "Boost Your Potential with Personal Growth Coaching",
+      excerpt: "We all have moments when we feel stuck, like we're circling the same mountain without finding a clear path to the summit. Discover how coaching for personal development can be a game-changer - a thoughtful, intentional process that helps uncover strengths, clarify goals, and build lasting growth habits.",
+      category: "Personal Growth",
+      date: "Aug 5, 2024",
+      author: "Eric Horwitz",
+      image: "https://static.wixstatic.com/media/a372b4_3d8cb094a4cf4243a2896ff0bfe01c56~mv2.png/v1/fill/w_980,h_654,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/a372b4_3d8cb094a4cf4243a2896ff0bfe01c56~mv2.png",
+      url: "https://www.gem.coach/post/boost-your-potential-with-personal-growth-coaching"
+    },
+    {
       title: "Mastering Prioritization & Work Goal Ideas: How to Focus on What Matters Most",
       excerpt: "We've all been there, staring down a never-ending to-do list, each item screaming for our attention. Learn how to cut through the chaos and focus on what truly matters with the Eisenhower Matrix and proactive prioritization strategies.",
       category: "Personal Growth",

@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     siteName: 'Eric Horwitz Coaching',
     images: [
       {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Eric Horwitz Executive Coach',
+        url: 'https://media.licdn.com/dms/image/sync/v2/D4E27AQEBwIKK59igGQ/articleshare-shrink_800/articleshare-shrink_800/0/1735395803533?e=2147483647&v=beta&t=k5j7jZldW3degFRM9eKhla5G9hJL2ftTMEsdFuJHoqc',
+        width: 800,
+        height: 800,
+        alt: 'Eric Horwitz, Executive Coach',
       },
     ],
     locale: 'en_US',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Eric Horwitz • Executive Coach',
     description: 'Transform your career and leadership potential with NYC executive coach Eric Horwitz.',
-    images: ['/og-image.jpg'],
+    images: ['https://media.licdn.com/dms/image/sync/v2/D4E27AQEBwIKK59igGQ/articleshare-shrink_800/articleshare-shrink_800/0/1735395803533?e=2147483647&v=beta&t=k5j7jZldW3degFRM9eKhla5G9hJL2ftTMEsdFuJHoqc'],
   },
   alternates: {
     canonical: '/',

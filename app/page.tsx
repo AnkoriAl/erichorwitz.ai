@@ -53,7 +53,7 @@ export default function HomePage() {
                 
                 <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6">
                   <span className="block text-white">Architect Your</span>
-                  <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                  <span className="block bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
                     Future
                   </span>
                 </h1>
@@ -65,7 +65,7 @@ export default function HomePage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
                     href="/coaching"
-                    className="bg-gradient-to-r from-yellow-500 to-orange-600 text-[#001C3E] px-8 py-4 rounded-xl font-semibold text-lg hover:from-yellow-400 hover:to-orange-500 transition-all duration-300 text-center"
+                    className="bg-white text-[#001C3E] px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-all duration-300 text-center"
                   >
                     Start Your Transformation
                   </Link>

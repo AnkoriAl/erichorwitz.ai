@@ -115,30 +115,37 @@ const BlogPage: React.FC = () => {
         "url": "https://static.wixstatic.com/media/a372b4_34d13eb76f1d466992a52772a58bc5e3~mv2.png/v1/fill/w_1200,h_800,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/GEM%20LOGO.png"
       }
     },
-    "blogPost": featuredPosts.map(post => ({
-      "@type": "BlogPosting",
-      "headline": post.title,
-      "description": post.excerpt,
-      "url": post.url,
-      "datePublished": new Date(post.date).toISOString(),
-      "dateModified": new Date(post.date).toISOString(),
-      "author": {
-        "@type": "Person",
-        "name": post.author
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "GEM Coaching"
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": post.url
-      },
-      "image": post.image ? {
-        "@type": "ImageObject",
-        "url": post.image
-      } : undefined
-    }))
+    "blogPost": featuredPosts.map(post => {
+      const blogPost: any = {
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "description": post.excerpt,
+        "url": post.url,
+        "datePublished": new Date(post.date).toISOString(),
+        "dateModified": new Date(post.date).toISOString(),
+        "author": {
+          "@type": "Person",
+          "name": post.author
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "GEM Coaching"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": post.url
+        }
+      };
+      
+      if (post.image) {
+        blogPost.image = {
+          "@type": "ImageObject",
+          "url": post.image
+        };
+      }
+      
+      return blogPost;
+    })
   };
 
   return (
@@ -146,8 +153,12 @@ const BlogPage: React.FC = () => {
       <Script
         id="article-schema"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(articleSchema)
+          __html: JSON.stringify(articleSchema, (key, value) => {
+            // Remove undefined values to prevent JSON-LD parsing issues
+            return value === undefined ? null : value;
+          })
         }}
       />
       {/* Hero */}

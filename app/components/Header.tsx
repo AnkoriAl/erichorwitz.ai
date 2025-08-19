@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import MobileMenu from './MobileMenu';
 
 const Header: React.FC = () => {
   const navItems = [
@@ -52,15 +53,8 @@ const Header: React.FC = () => {
             </Link>
           </div>
 
-          {/* Mobile menu - simplified for now */}
-          <div className="md:hidden">
-            <Link
-              href="/contact"
-              className="px-4 py-2 rounded-md font-semibold bg-gradient-to-r from-[#001C3E] to-blue-800 text-white text-sm"
-            >
-              Get Started
-            </Link>
-          </div>
+          {/* Mobile menu */}
+          <MobileMenu navItems={navItems} />
         </div>
       </nav>
     </header>

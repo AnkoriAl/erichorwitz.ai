@@ -99,7 +99,7 @@ export default function QuotesPage() {
       <Script
         id="quotes-schema"
         type="application/ld+json"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(quotesSchema)
         }}

@@ -143,7 +143,7 @@ const ProgramsPage: React.FC = () => {
       <Script
         id="course-schema"
         type="application/ld+json"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(courseSchema)
         }}
@@ -284,7 +284,7 @@ const ProgramsPage: React.FC = () => {
               <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-6">
                 <h3 className="font-semibold text-gray-900 mb-3">What You Get:</h3>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• Weekly 90-minute group sessions with Eric</li>
+                  <li>• Weekly 60-minute group sessions with Eric</li>
                   <li>• Paired accountability partnerships</li>
                   <li>• Custom goal-tracking system</li>
                   <li>• Progress measurement and iteration</li>

@@ -38,6 +38,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
       <Script
         id="breadcrumb-schema"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema)
         }}

@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import ClientLayout from './components/ClientLayout'
 import { GoogleAnalytics } from './components/GoogleAnalytics'
-import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +25,11 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'pIG0WcuE5z1QqEyjFc8wZjMeoYKJ5xmOPGAwDRALy-Q',
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-icon',
   },
   openGraph: {
     title: 'Eric Horwitz • Executive Coach',
@@ -62,26 +66,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/icon" type="image/png" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/apple-icon" sizes="180x180" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        {/* Google tag (gtag.js) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-GSW578WSLS"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-GSW578WSLS', {
-              send_page_view: false
-            });
-          `}
-        </Script>
       </head>
       <body className={inter.className}>
         <GoogleAnalytics />

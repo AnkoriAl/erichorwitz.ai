@@ -89,6 +89,7 @@ const AboutPage: React.FC = () => {
       <Script
         id="structured-data"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",

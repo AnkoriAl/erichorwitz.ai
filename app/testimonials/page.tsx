@@ -137,6 +137,7 @@ const TestimonialsPage: React.FC = () => {
       <Script
         id="review-schema"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(reviewSchema)
         }}

@@ -117,6 +117,261 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Client Logos */}
+        <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center bg-[#001C3E]/5 backdrop-blur-sm rounded-full px-6 py-3 mb-6">
+                <span className="text-sm font-semibold text-[#001C3E] uppercase tracking-wide">Trusted Partnerships</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                Be One of Many Individuals &<br />
+                <span className="bg-gradient-to-r from-[#001C3E] to-blue-700 bg-clip-text text-transparent">
+                  Corporations Coached by GEM
+                </span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                From Fortune 500 companies to prestigious institutions, GEM has partnered with industry leaders worldwide
+              </p>
+            </div>
+            
+            {/* Premium Clients - Featured Row */}
+            <div className="mb-12">
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <div className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+                  <div className="flex items-center justify-center h-16 md:h-20">
+                    <img 
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Google_2015_logo.svg?width=256" 
+                      alt="Google" 
+                      className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-90 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+                  <div className="flex items-center justify-center h-16 md:h-20">
+                    <img 
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Goldman_Sachs_logo.svg?width=256" 
+                      alt="Goldman Sachs" 
+                      className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-90 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+                  <div className="flex items-center justify-center h-16 md:h-20">
+                    <img 
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Netflix_2015_logo.svg?width=256" 
+                      alt="Netflix" 
+                      className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-90 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+                  <div className="flex items-center justify-center h-16 md:h-20">
+                    <img 
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Blue_background_White_House_Logo_-_Washington,_D.C.png?width=256" 
+                      alt="The White House" 
+                      className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-90 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+                  <div className="flex items-center justify-center h-16 md:h-20">
+                    <img 
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Chanel_logo.svg?width=256" 
+                      alt="Chanel" 
+                      className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-90 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* All Clients Grid */}
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <span className="text-sm md:text-base font-semibold text-gray-700 opacity-80 group-hover:opacity-100 transition-colors text-center">Blink Fitness</span>
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/VOGUE_LOGO.svg?width=256" 
+                    alt="Vogue" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Bank_of_America_logo.svg?width=256" 
+                    alt="Bank of America" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Neuberger_Berman_logo.svg?width=256" 
+                    alt="Neuberger Berman" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Columbia_University_1754_updated.svg?width=256" 
+                    alt="Columbia University" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/NYC_DOE_Logo.png?width=256" 
+                    alt="NYC Department of Education" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <span className="text-sm md:text-base font-semibold text-gray-700 opacity-80 group-hover:opacity-100 transition-colors text-center">Ali Forney Center</span>
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/JNJ_Logo_New.svg?width=256" 
+                    alt="Johnson & Johnson" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Nyu_short_color.svg?width=256" 
+                    alt="NYU" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Macquarie-logo.svg?width=256" 
+                    alt="Macquarie" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Logo_of_the_Ford_Foundation.svg?width=256" 
+                    alt="Ford Foundation" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <span className="text-sm md:text-base font-semibold text-gray-700 opacity-80 group-hover:opacity-100 transition-colors text-center">EFCG</span>
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Penske_Logo.svg?width=256" 
+                    alt="Penske" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Logo_of_Deloitte.svg?width=256" 
+                    alt="Deloitte" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/LifeBridge_Health_logo.svg?width=256" 
+                    alt="LifeBridge Health" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <span className="text-sm md:text-base font-semibold text-gray-700 opacity-80 group-hover:opacity-100 transition-colors text-center">Trinity Church</span>
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/The_New_York_Times_logo.svg?width=256" 
+                    alt="The New York Times" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/PwC_Company_Logo.svg?width=256" 
+                    alt="PwC" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Louis_Vuitton_logo.svg?width=256" 
+                    alt="Louis Vuitton" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              <div className="group bg-white/70 backdrop-blur-sm rounded-lg p-4 hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div className="flex items-center justify-center h-16 md:h-20">
+                  <img 
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Russell_Reynolds_Associates_-_logo.svg?width=256" 
+                    alt="Russell Reynolds Associates" 
+                    className="max-h-12 md:max-h-14 w-auto object-contain filter grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom CTA */}
+            <div className="text-center mt-16">
+              <p className="text-lg text-gray-600 mb-6">
+                Ready to join this prestigious community of leaders?
+              </p>
+              <Link
+                href="/coaching"
+                className="inline-flex items-center bg-[#001C3E] text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Start Your Transformation
+                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Programs */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

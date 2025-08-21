@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { Users, Building, Lightbulb, Target, BarChart, Sparkles } from 'lucide-react';
 import ServerSection from '../components/ServerSection';
 import ServerCard from '../components/ServerCard';
@@ -66,12 +65,12 @@ const CoachingPage: React.FC = () => {
   ];
 
   const tools = [
-    "Ikigai", "Maslow's Hierarchy", "Attractive Selling", "GEM Thriver Journal", 
+    "Ikigai", "Maslow's Hierarchy", "GEM Thriver Journal", 
     "StrengthsFinder", "360 Feedback"
   ];
 
   const clientLogos = [
-    "Credit Suisse", "IDEO", "Google", "NYU", "Bloomberg", "NYC DOE", "Reuters", "Columbia"
+    "Credit Suisse", "IDEO", "Google", "NYU", "Bloomberg", "NYC DOE", "Reuters", "Columbia", "Bank of America", "Yale University", "Johnson & Johnson"
   ];
 
   return (
@@ -83,11 +82,9 @@ const CoachingPage: React.FC = () => {
             <Sparkles className="h-4 w-4 mr-2" />
             <span className="text-sm font-medium">Transform Purpose into Performance</span>
           </div>
-          <h1 className="sr-only">Executive Coaching, Growth Mindset & Career Change Programs by Eric Horwitz — GEM Coaching</h1>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Executive Coaching, Growth Mindset & Career Change</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Executive Coaching, Growth Mindset & Career Change Programs</h1>
           <p className="text-xl text-blue-100 mb-8">
-            Unlock your potential with executive coaching, growth mindset activities, and career change programs. Eric Horwitz offers personalized coaching for professionals, leaders, and organizations seeking breakthrough results, leadership development, and work goal setting.<br />
-            <span className="font-semibold">For more, visit <a href="https://gem.coach" className="underline hover:text-blue-200" target="_blank" rel="noopener noreferrer">gem.coach</a></span>
+            Unlock your potential with executive coaching, growth mindset activities, and career change programs. Eric Horwitz offers personalized coaching for professionals, leaders, and organizations seeking breakthrough results, leadership development, and work goal setting.
           </p>
         </div>
       </section>
@@ -135,8 +132,32 @@ const CoachingPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Coaching Philosophy */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900">Our Coaching Philosophy</h2>
+            <p className="mt-4 text-lg text-gray-600">Clarity, growth, and sustainable success are at the core of what we do.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="bg-gray-50 p-8 rounded-xl">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Coaching is Architecture</h3>
+              <p className="text-gray-600">Therapy often digs through the past. We build for the future. Together, we design the blueprint for the life and work you want.</p>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-xl">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Every Gem Has Potential</h3>
+              <p className="text-gray-600">Clarity begins when you stop lying to yourself about what matters most. Coaching is the pressure and polish that helps you shine.</p>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-xl">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Transformation is Collective</h3>
+              <p className="text-gray-600">Coaching is not done in isolation. Our community-driven approach creates accountability, shared wisdom, and deeper impact.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Tools & Frameworks */}
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Coaching Tools & Frameworks for Career Growth</h2>
           <div className="flex flex-wrap justify-center gap-4">
@@ -153,37 +174,75 @@ const CoachingPage: React.FC = () => {
       </section>
 
       {/* Signature Programs */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Signature Programs: Thriver, Treasure Chest & More</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-xl shadow-lg p-8">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Signature Programs</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8 flex flex-col">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Thriver Program</h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-6 flex-grow">
                 12-week intensive with paired accountability partners for exponential growth, midlife career change, and breakthrough results. Ideal for professionals seeking work goal setting, burnout recovery, and leadership development.
               </p>
               <a
                 href="https://gem.coach/thriver"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#001C3E] font-semibold hover:underline bg-blue-50 px-4 py-2 rounded transition"
+                className="text-[#001C3E] font-semibold hover:underline bg-blue-50 px-4 py-2 rounded transition text-center"
               >
-                Learn More about the Thriver Program →
+                Learn More →
               </a>
             </div>
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8 flex flex-col">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Treasure Chest</h3>
-              <p className="text-gray-600 mb-6">
-                Global self-improvement community for collective growth, reflection, and monthly themed workshops. Join a supportive environment designed for continuous learning, growth mindset activities, and professional identity counseling.
+              <p className="text-gray-600 mb-6 flex-grow">
+                A living community for self-improvers. Members collaborate and learn through shared classes and group coaching. Access 8 classes monthly plus optional one-off sessions.
               </p>
               <a
                 href="https://gem.coach/treasure-chest"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#001C3E] font-semibold hover:underline bg-blue-50 px-4 py-2 rounded transition"
+                className="text-[#001C3E] font-semibold hover:underline bg-blue-50 px-4 py-2 rounded transition text-center"
               >
-                Learn More about the Treasure Chest →
+                Explore The Community →
               </a>
+            </div>
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8 flex flex-col">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">The Renaissance Academy</h3>
+              <p className="text-gray-600 mb-6 flex-grow">
+                For aspiring and established coaches. The Academy offers a rigorous framework blending coaching philosophy, practice, and financial development to help coaches thrive.
+              </p>
+              <a
+                href="https://www.gem.coach/renaissance-academy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#001C3E] font-semibold hover:underline bg-blue-50 px-4 py-2 rounded transition text-center"
+              >
+                Join The Academy →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Signature Approaches */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900">Signature GEM Approaches</h2>
+            <p className="mt-4 text-lg text-gray-600">Proven frameworks to build alignment and create authentic value.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 p-8 rounded-xl shadow-md">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Attractive Selling</h3>
+              <p className="text-gray-600">A philosophy of creating value so authentic it attracts. We replace outdated sales tactics with presence, generosity, and integrity.</p>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-xl shadow-md">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">The GEM Navigator</h3>
+              <p className="text-gray-600">A structured intake system that ensures clients are paired with the right coach and program for a seamless fit.</p>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-xl shadow-md">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">The You-Me-Agree Framework</h3>
+              <p className="text-gray-600">A simple communication tool to build alignment and resolve conflicts, ensuring progress is always collaborative.</p>
             </div>
           </div>
         </div>
@@ -192,26 +251,22 @@ const CoachingPage: React.FC = () => {
       {/* Client Logos */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">Trusted by Leading Organizations & Career Development Committees</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 opacity-60">
+          <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">Trusted by Individuals at Leading Organizations</h2>
+          <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 opacity-70">
             {clientLogos.map((logo, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-gray-100 rounded-lg p-4 h-16 flex items-center justify-center">
-                  <span className="text-gray-700 font-semibold text-sm">{logo}</span>
-                </div>
-              </div>
+              <span key={index} className="text-gray-700 font-semibold text-lg">{logo}</span>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Quote Callout */}
+      {/* Why Choose Us */}
       <section className="py-16 bg-[#001C3E] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <blockquote className="text-2xl md:text-3xl font-light italic mb-4">
-            "Asking for help is a sign of strength, not weakness."
-          </blockquote>
-          <cite className="text-blue-200">— Eric Horwitz</cite>
+          <h2 className="text-3xl font-bold mb-4">Why Choose GEM?</h2>
+          <p className="text-xl text-blue-200 mb-8">
+            Because we don’t just give advice—we partner with you to create transformation. Our blend of personal coaching, structured programs, and collective community means you’re not only guided—you’re supported, challenged, and held accountable.
+          </p>
         </div>
       </section>
 

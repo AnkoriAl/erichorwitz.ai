@@ -3,6 +3,7 @@ import { Users, Building, Lightbulb, Target, BarChart, Sparkles } from 'lucide-r
 import ServerSection from '../components/ServerSection';
 import ServerCard from '../components/ServerCard';
 import ServerBreadcrumb from '../components/ServerBreadcrumb';
+import FaqSection from '../components/Faq';
 
 export const metadata: Metadata = {
   title: 'Executive Coaching, Growth Mindset & Career Change Programs | Eric Horwitz | GEM Coaching',
@@ -269,6 +270,9 @@ const CoachingPage: React.FC = () => {
           </p>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FaqSection />
 
       {/* CTA */}
       <ServerSection className="py-20 bg-gradient-to-r from-[#001C3E] to-blue-900 text-white">
